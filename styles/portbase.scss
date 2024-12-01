@@ -1,0 +1,97 @@
+/*
+SCSS Reset Styles
+Made to be reusable
+Ethan Carson
+11/30/2024
+*/
+@mixin reset-styles {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+    }
+
+    html {
+        font-size: 16px; /* Base font size */
+        line-height: 1.5; /* Consistent line spacing */
+    }
+
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: white; /* Optional */
+        color: black; /* Optional */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: inherit;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+    blockquote::before,
+    blockquote::after,
+    q::before,
+    q::after {
+        content: "";
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    img,
+    svg {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        appearance: none;
+        font: inherit;
+        color: inherit;
+        background: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button:hover,
+    a:hover {
+        cursor: pointer;
+    }
+
+    button:focus,
+    a:focus {
+        outline: 2px solid rgba(0, 0, 0, 0.5); /* Optional for accessibility */
+        outline-offset: 2px; /* Improves visibility */
+    }
+}

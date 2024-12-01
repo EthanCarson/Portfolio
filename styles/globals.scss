@@ -1,6 +1,4 @@
-// styles/globals.scss
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-}
+// Reset Styles
+@import "reset";
+//Base Styles
+@import "portbase";
