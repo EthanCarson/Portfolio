@@ -103,7 +103,7 @@ a:focus {
 }
 
 html {
-  background-color: white;
+  background: url(#);
   display: block;
   justify-content: center;
   align-items: center;
@@ -119,21 +119,34 @@ html nav:first-of-type {
   box-shadow: 0px 6px 8px -2px rgba(14, 4, 61, 0.785);
 }
 html nav:first-of-type ul {
+  height: 3.5em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: stretch;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
   background-color: hsl(205, 70%, 46%);
-  padding: 0.6em;
 }
 html nav:first-of-type ul li {
+  height: 100%;
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  align-items: center;
 }
 html nav:first-of-type ul li a {
   display: block;
   color: white;
   text-align: center;
+}
+html nav:first-of-type ul li span {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
 }/*# sourceMappingURL=globals.css.map */

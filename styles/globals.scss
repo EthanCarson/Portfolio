@@ -11,13 +11,13 @@ $PBlue: hsla(205, 70, 46, 1); //Portfolio Blue Color
 $PBg: hsla(176, 53, 80, 1); //Portfolio Background Color
 $PGreen: hsla(130, 50, 57, 1); //Portfolio Green Color
 $PDGreen: hsla(158, 41, 31, 1); //Portfolio Dark Green Color
-
-//Base Styling for Project
+// Base Styling for Project
 html {
-    background-color: white;
+    background: url(#);
     display: block;
     justify-content: center;
     align-items: center;
+
     body {
         margin-left: auto;
         margin-right: auto;
@@ -25,27 +25,42 @@ html {
         min-height: 100vh;
         background-color: $PBg;
     }
+
     nav:first-of-type {
         box-shadow: 0px 6px 8px -2px rgba(14, 4, 61, 0.785);
 
         ul {
+            height: 3.5em; // Ensure ul has a height
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             align-items: center;
-            justify-content: stretch; // Ensure the li elements stretch across the ul
+            padding-left: 0.6em;
+            padding-right: 0.6em;
             background-color: $PBlue;
-            padding: 0.6em;
 
             li {
+                height: 100%; // Ensure li takes up full height of ul
                 display: flex; // Change to flex for items to stretch properly
                 flex-grow: 1; // Allow li elements to grow and take equal space
                 justify-content: center; // Optionally center the links inside the li
+                align-items: center; // Ensure child elements center vertically
 
                 a {
                     display: block; // Make anchor fill li element
                     color: white;
                     text-align: center;
+                }
+
+                span {
+                    display: flex;
+                    background-color: white;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%; // Ensure span takes full height of li
+                    padding-left: 0.2em;
+                    padding-right: 0.2em;
                 }
             }
         }
