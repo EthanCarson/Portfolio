@@ -1,0 +1,139 @@
+/* 
+Base Setup for Portfolio Page
+Ethan Carson
+12/2/2024
+*/
+/*
+SCSS Reset Styles
+Made to be reusable
+Ethan Carson
+11/30/2024
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+  line-height: 1.5; /* Consistent line spacing */
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: white; /* Optional */
+  color: black; /* Optional */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.5); /* Optional for accessibility */
+  outline-offset: 2px; /* Improves visibility */
+}
+
+html {
+  background-color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+html body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: hsl(176, 53%, 80%);
+}
+html nav:first-of-type {
+  box-shadow: 0px 6px 8px -2px rgba(14, 4, 61, 0.785);
+}
+html nav:first-of-type ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: stretch;
+  background-color: hsl(205, 70%, 46%);
+  padding: 0.6em;
+}
+html nav:first-of-type ul li {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+html nav:first-of-type ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=globals.css.map */
