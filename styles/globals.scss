@@ -12,6 +12,12 @@ $PBlue: hsla(205, 70, 46, 1); //Portfolio Blue Color
 $PBg: hsla(176, 53, 80, 1); //Portfolio Background Color
 $PGreen: hsla(130, 50, 57, 1); //Portfolio Green Color
 $PDGreen: hsla(158, 41, 31, 1); //Portfolio Dark Green Color
+//Shadows
+$PDBLueS: rgba(50, 21, 93, 0.518);
+$PBlueS: rgba(14, 30, 114, 0.417);
+$PBgS: rgba(101, 158, 199, 0.374);
+$PGreenS: rgba(44, 145, 122, 0.391);
+$PDGreenS: rgba(27, 83, 91, 0.412);
 //Spacing
 $SpaceSM: 0.2rem;
 $SpaceMD: 0.6rem;
@@ -31,7 +37,7 @@ html {
 
         //Navitaion Styles
         nav:first-of-type {
-            box-shadow: 0px 6px 8px -2px rgba(14, 4, 61, 0.785);
+            box-shadow: 0px 6px 8px -2px $PBlueS;
 
             ul {
                 height: 3.5em; // Ensure ul has a height
@@ -76,7 +82,7 @@ html {
             @include flex-center;
             flex-wrap: wrap;
             flex-direction: row;
-            box-shadow: 0px -6px 8px -2px rgba(4, 11, 90, 0.385);
+            box-shadow: 0px -6px 8px -2px $PDBlueS;
 
             width: 100%;
             img {
@@ -122,6 +128,20 @@ html {
             #Copyright {
                 text-align: center;
             }
+        }
+        //Other Base Styles
+        .Secondary {
+            background-color: $PDGreen;
+            box-shadow: 0px -6px 8px -2px $PDGreenS;
+        }
+        button {
+            min-width: 7em;
+            min-height: 2.4em;
+            background-color: $PBlue;
+            text-align: center;
+            border-radius: 15px;
+            color: white;
+            box-shadow: inset 0px -6px 4px $PBlueS;
         }
     }
 }
