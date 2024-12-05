@@ -6,11 +6,16 @@ Ethan Carson
 // Reset Styles
 @import "reset";
 //Base Variables for Project:
+//Colors
 $PDBLue: hsla(223, 44, 45, 1); //Portfolio Dark Blue Color
 $PBlue: hsla(205, 70, 46, 1); //Portfolio Blue Color
 $PBg: hsla(176, 53, 80, 1); //Portfolio Background Color
 $PGreen: hsla(130, 50, 57, 1); //Portfolio Green Color
 $PDGreen: hsla(158, 41, 31, 1); //Portfolio Dark Green Color
+//Spacing
+$SpaceSM: 0.2rem;
+$SpaceMD: 0.6rem;
+$SpaceLG: 1.2rem;
 // Base Styling for Project
 html {
     background: url(#);
@@ -22,46 +27,100 @@ html {
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
-        min-height: 100vh;
         background-color: $PBg;
-    }
 
-    nav:first-of-type {
-        box-shadow: 0px 6px 8px -2px rgba(14, 4, 61, 0.785);
+        //Navitaion Styles
+        nav:first-of-type {
+            box-shadow: 0px 6px 8px -2px rgba(14, 4, 61, 0.785);
 
-        ul {
-            height: 3.5em; // Ensure ul has a height
-            display: flex;
+            ul {
+                height: 3.5em; // Ensure ul has a height
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                padding-left: $SpaceMD;
+                padding-right: $SpaceMD;
+                background-color: $PBlue;
+
+                li {
+                    height: 100%; // Ensure li takes up full height of ul
+                    display: flex; // Change to flex for items to stretch properly
+                    flex-grow: 1; // Allow li elements to grow and take equal space
+                    justify-content: center; // Optionally center the links inside the li
+                    align-items: center; // Ensure child elements center vertically
+
+                    a {
+                        display: block; // Make anchor fill li element
+                        color: white;
+                        text-align: center;
+                    }
+
+                    span {
+                        display: flex;
+                        background-color: white;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%; // Ensure span takes full height of li
+                        padding-left: $SpaceSM;
+                        padding-right: $SpaceSM;
+                        color: black;
+                    }
+                }
+            }
+        }
+        //Footer Styles
+        footer {
+            background-color: $PDBLue;
+            @include flex-center;
+            flex-wrap: wrap;
             flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: center;
-            padding-left: 0.6em;
-            padding-right: 0.6em;
-            background-color: $PBlue;
+            box-shadow: 0px -6px 8px -2px rgba(4, 11, 90, 0.385);
 
-            li {
-                height: 100%; // Ensure li takes up full height of ul
-                display: flex; // Change to flex for items to stretch properly
-                flex-grow: 1; // Allow li elements to grow and take equal space
-                justify-content: center; // Optionally center the links inside the li
-                align-items: center; // Ensure child elements center vertically
-
-                a {
-                    display: block; // Make anchor fill li element
-                    color: white;
-                    text-align: center;
-                }
-
-                span {
+            width: 100%;
+            img {
+                display: inline-block;
+            }
+            div {
+                flex: 1 1 auto;
+                min-width: 400px;
+                color: white;
+            }
+            #Email {
+                min-width: 500px;
+                display: flex;
+                align-content: center;
+                padding-left: $SpaceMD;
+            }
+            #Icons {
+                @include flex-center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                width: 140px;
+                #Logo {
                     display: flex;
-                    background-color: white;
-                    align-items: center;
                     justify-content: center;
+                    flex: 1 1 auto;
                     width: 100%;
-                    height: 100%; // Ensure span takes full height of li
-                    padding-left: 0.2em;
-                    padding-right: 0.2em;
+
+                    @media only screen and (min-width: 800px) {
+                        margin-left: 100px;
+                    }
                 }
+                #Social {
+                    display: flex;
+                    justify-content: center;
+                    flex: 1 1 auto;
+                    flex: 1 1 auto;
+
+                    @media only screen and (min-width: 900px) {
+                        margin-left: 100px;
+                    }
+                }
+            }
+            #Copyright {
+                text-align: center;
             }
         }
     }

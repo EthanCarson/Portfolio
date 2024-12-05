@@ -24,9 +24,7 @@ export default function Navigation() {
             {pathname === link.href ? (
               <span>{link.label}</span> // Display as text only for current page
             ) : (
-              <Link href={link.href}>
-                <a>{link.label}</a> {/* Render the <a> tag for other pages */}
-              </Link>
+              <Link href={link.href}>{link.label}</Link>
             )}
           </li>
         ))}
