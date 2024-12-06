@@ -1,0 +1,16 @@
+{
+  "Projects": {
+    "CorningTravelSite": {
+      "Card": "ex",
+      "Caption": "Made a Corning Travelsite",
+      "Video": "ex",
+      "Description": "This is a project!"
+    }
+  },
+  "Highlights": {
+    "RochIG": {
+      "Card": "ex",
+      "Caption": "Preformed in the first Rochester Intergenerational Choir"
+    }
+  }
+}
