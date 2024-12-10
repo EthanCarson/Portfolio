@@ -1,7 +1,9 @@
+import Card from "./components/Card";
+import Header from "./components/Header";
 export default function Home() {
   return (
     <div id="Home">
-      <header>Header</header>
+      <Header Image="#" Heading="Ethan Carson" />
       <section id="Intro">
         <article>Image</article>
         <article>
@@ -11,13 +13,9 @@ export default function Home() {
       </section>
       <section className="secondary">
         <h1>Personal Highlights:</h1>
-        <div id="Highlight1">
-          <img src="" alt="" />
-          <caption></caption>
-        </div>
-        <div id="Highlight2">
-          <img src="" alt="" />
-          <caption></caption>
+        <div>
+          <Card isHomePage={true}>RochIG</Card>
+          <Card isHomePage={true}>CorningTravelSite</Card>
         </div>
       </section>
     </div>
