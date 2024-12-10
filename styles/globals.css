@@ -75,8 +75,8 @@ button,
 textarea,
 select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font: inherit;
   color: inherit;
   background: none;
@@ -105,14 +105,19 @@ a:focus {
 html {
   background: url(#);
   display: block;
-  justify-content: center;
-  align-items: center;
 }
 html body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  width: 100%;
   background-color: hsl(176, 53%, 80%);
+}
+@media only screen and (max-width: 500px) {
+  html body html body {
+    width: 100vw; /* Ensures body fills the viewport */
+    max-width: none; /* Removes the constraint */
+  }
 }
 html body nav:first-of-type {
   box-shadow: 0px 6px 8px -2px rgba(14, 30, 114, 0.417);
@@ -157,7 +162,7 @@ html body footer {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  box-shadow: 0px -6px 8px -2px rgba(4, 11, 90, 0.385);
+  box-shadow: 0px -6px 8px -2px rgba(50, 21, 93, 0.518);
   width: 100%;
 }
 html body footer img {
@@ -209,7 +214,7 @@ html body footer #Copyright {
 }
 html body .secondary {
   background-color: hsl(158, 41%, 31%);
-  box-shadow: 0px -6px 8px -2px rgba(2, 52, 23, 0.42);
+  box-shadow: 0px -6px 8px -2px rgba(27, 83, 91, 0.412);
 }
 html body button {
   min-width: 7em;
@@ -218,5 +223,5 @@ html body button {
   text-align: center;
   border-radius: 15px;
   color: white;
-  box-shadow: inset 0px -6px 4px rgba(10, 2, 52, 0.314);
-} /*# sourceMappingURL=globals.css.map */
+  box-shadow: inset 0px -6px 4px rgba(14, 30, 114, 0.417);
+}/*# sourceMappingURL=globals.css.map */
