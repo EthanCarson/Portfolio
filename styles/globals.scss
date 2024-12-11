@@ -32,22 +32,31 @@ html {
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
-        width: 100%;
+        min-width: 400px;
+
         background-color: $PBg;
-        @media only screen and (max-width: 500px) {
-            html body {
-                width: 100%; /* Ensures body fills the viewport */
-                max-width: none; /* Removes the constraint */
-            }
-        }
+
         #Home {
             width: 100%;
             flex-shrink: 0;
             flex-shrink: 0;
+            .secondary {
+                h1 {
+                    text-align: center;
+                }
+                &:div {
+                    @include flex-basic;
+                    #Card {
+                        display: block;
+                    }
+                }
+            }
         }
         //Fonts
 
-        h1 h2 h3 {
+        h1,
+        h2,
+        h3 {
             font-family: "Press Start 2P", system-ui;
             font-weight: 400;
             font-style: normal;

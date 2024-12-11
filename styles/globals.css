@@ -110,21 +110,30 @@ html body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  width: 100%;
+  min-width: 400px;
   background-color: hsl(176, 53%, 80%);
-}
-@media only screen and (max-width: 500px) {
-  html body html body {
-    width: 100%; /* Ensures body fills the viewport */
-    max-width: none; /* Removes the constraint */
-  }
 }
 html body #Home {
   width: 100%;
   flex-shrink: 0;
   flex-shrink: 0;
 }
-html body h1 h2 h3 {
+html body #Home .secondary h1 {
+  text-align: center;
+}
+html body #Home .secondary:div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+html body #Home .secondary:div #Card {
+  display: block;
+}
+html body h1,
+html body h2,
+html body h3 {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
