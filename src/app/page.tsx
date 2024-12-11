@@ -3,7 +3,7 @@ import Header from "./components/Header";
 export default function Home() {
   return (
     <div id="Home">
-      <Header Image="#" Heading="Ethan Carson" />
+      <Header HImage="#" Heading="Ethan Carson" />
       <section id="Intro">
         <article>Image</article>
         <article>
