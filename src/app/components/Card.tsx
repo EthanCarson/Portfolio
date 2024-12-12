@@ -36,24 +36,24 @@ export default function Card({ children, isHomePage }: CardProps) {
   const caption = isHomePage && HCaption ? HCaption : SCaption;
 
   const renderCardContent = (
-    <div className="Card">
+    <>
       <Image
         src={CardImage}
         alt={ImgAlt}
         width={251}
         height={251}
-        layout="intrinsic" // Optional: You can also use 'responsive' or 'fill' if needed
+        layout="intrinsic" // Optional: You can also use 'responsive' or 'fill' if needed </>
       />
       <div>
         {isHomePage && isProject && <em>Project: </em>}
         {caption} {/* Display the selected caption */}
       </div>
-    </div>
+    </>
   );
 
   // If Link is provided (i.e. not "#"), use Next.js Link for routing
   return (
-    <div className="card">
+    <div className="Card">
       {link !== "#" ? (
         <Link href={link}>{renderCardContent}</Link>
       ) : (

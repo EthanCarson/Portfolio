@@ -23,6 +23,9 @@ $PDGreenS: rgba(27, 83, 91, 0.412);
 $SpaceSM: 0.2rem;
 $SpaceMD: 0.6rem;
 $SpaceLG: 1.2rem;
+$SpaceGap: 5rem;
+//Header Sizes
+$Heading1: 30px;
 // Base Styling for Project
 html {
     background: url(#);
@@ -40,14 +43,49 @@ html {
             width: 100%;
             flex-shrink: 0;
             flex-shrink: 0;
+            img {
+                display: block;
+            }
+            h1 {
+                text-align: center;
+                padding: $SpaceSM;
+            }
+            #Intro {
+                @include flex-center;
+                flex-wrap: wrap;
+                h1 {
+                    padding-bottom: $SpaceSM;
+                    font-size: $Heading1;
+                }
+                article:nth-of-type(1) {
+                    padding: $SpaceMD;
+                    flex: 1 1 auto;
+                }
+                article:nth-of-type(2) {
+                    flex: 2 2 auto;
+                    min-width: 700px;
+                    text-align: center;
+                    padding: $SpaceMD;
+                }
+            }
             .secondary {
                 h1 {
-                    text-align: center;
+                    padding: $SpaceMD;
                 }
-                &:div {
-                    @include flex-basic;
-                    #Card {
-                        display: block;
+                > div {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .Card {
+                        display: flex; // Use flexbox for layout
+                        flex-direction: column; // Stack the content if needed
+                        align-items: center; // Center items horizontally if needed
+                        padding: $SpaceGap;
+
+                        div {
+                            max-width: 251px; // Match the image width exactly
+                            word-wrap: break-word; // Ensure wrapping for long text
+                        }
                     }
                 }
             }

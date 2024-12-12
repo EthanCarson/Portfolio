@@ -118,18 +118,50 @@ html body #Home {
   flex-shrink: 0;
   flex-shrink: 0;
 }
-html body #Home .secondary h1 {
-  text-align: center;
+html body #Home img {
+  display: block;
 }
-html body #Home .secondary:div {
+html body #Home h1 {
+  text-align: center;
+  padding: 0.2rem;
+}
+html body #Home #Intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
-html body #Home .secondary:div #Card {
-  display: block;
+html body #Home #Intro h1 {
+  padding-bottom: 0.2rem;
+  font-size: 30px;
+}
+html body #Home #Intro article:nth-of-type(1) {
+  padding: 0.6rem;
+  flex: 1 1 auto;
+}
+html body #Home #Intro article:nth-of-type(2) {
+  flex: 2 2 auto;
+  min-width: 700px;
+  text-align: center;
+  padding: 0.6rem;
+}
+html body #Home .secondary h1 {
+  padding: 0.6rem;
+}
+html body #Home .secondary > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+html body #Home .secondary > div .Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+html body #Home .secondary > div .Card div {
+  max-width: 251px;
+  word-wrap: break-word;
 }
 html body h1,
 html body h2,
