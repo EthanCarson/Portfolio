@@ -80,7 +80,9 @@ html {
                         display: flex; // Use flexbox for layout
                         flex-direction: column; // Stack the content if needed
                         align-items: center; // Center items horizontally if needed
-                        padding: $SpaceGap;
+                        padding: $SpaceMD;
+                        padding-left: $SpaceGap;
+                        padding-right: $SpaceGap;
 
                         div {
                             max-width: 251px; // Match the image width exactly

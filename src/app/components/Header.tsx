@@ -1,18 +1,31 @@
+import { ReactNode } from "react";
+
+interface ProjectData {
+  HImage?: string;
+  Heading?: string;
+}
+
+interface Props {
+  data?: {
+    Projects?: Record<string, ProjectData>;
+  };
+  HImage?: string;
+  Heading?: string;
+  children?: ReactNode;
+}
+
 export default function Header({ data, HImage, Heading, children }: Props) {
+  // Determine the reference name from children if it's a string
   const referenceName = typeof children === "string" ? children : "";
 
-  // Ensure data and data.Projects exist before attempting to access them
-  const headerData = data?.Projects ? data.Projects[referenceName] : undefined;
+  // Safely access project data
+  const headerData = data?.Projects?.[referenceName];
 
-  if (!headerData && !(HImage || Heading)) {
-    console.error(`Header data not found for reference name: ${referenceName}`);
-    return null;
-  }
-
-  // Destructure with fallback if properties are missing
+  // Destructure with fallback values
   const { HImage: dynamicHImage = "", Heading: dynamicHeading = "" } =
     headerData || {};
 
+  // Final values for header image and heading
   const finalHImage = dynamicHImage || HImage;
   const finalHeading = dynamicHeading || Heading;
 

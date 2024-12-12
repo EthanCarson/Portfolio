@@ -157,7 +157,9 @@ html body #Home .secondary > div .Card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  padding: 0.6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 html body #Home .secondary > div .Card div {
   max-width: 251px;

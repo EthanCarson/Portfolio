@@ -17,7 +17,7 @@ export default function Card({ children, isHomePage }: CardProps) {
     data.Projects[referenceName] || data.Highlights[referenceName];
 
   if (!cardData) {
-    console.error(`Card data not found for reference: ${referenceName}`);
+    console.error(`Card data not found`);
     return null; // Graceful fallback
   }
 
