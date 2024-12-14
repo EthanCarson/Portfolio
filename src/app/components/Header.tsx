@@ -7,7 +7,7 @@ interface ProjectData {
 
 interface Props {
   data?: {
-    Projects?: Record<string, ProjectData>;
+    Projects?: Record<string, Record<string, ProjectData>>;
   };
   HImage?: string;
   Heading?: string;
@@ -15,17 +15,17 @@ interface Props {
 }
 
 export default function Header({ data, HImage, Heading, children }: Props) {
-  // Determine the reference name from children if it's a string
   const referenceName = typeof children === "string" ? children : "";
 
-  // Safely access project data
-  const headerData = data?.Projects?.[referenceName];
+  // Safely access the project data from Projects or Highlights
+  const headerData = Object.values(data?.Projects || {})
+    .map((category: Record<string, ProjectData>) => category[referenceName])
+    .find(Boolean);
 
-  // Destructure with fallback values
   const { HImage: dynamicHImage = "", Heading: dynamicHeading = "" } =
     headerData || {};
 
-  // Final values for header image and heading
+  // Use the fallback value for image and heading if not available
   const finalHImage = dynamicHImage || HImage;
   const finalHeading = dynamicHeading || Heading;
 

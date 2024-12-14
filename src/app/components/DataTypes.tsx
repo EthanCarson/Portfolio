@@ -11,6 +11,7 @@ export type Project = {
 export type Highlight = {
   CardImage: string;
   HCaption: string;
+  SCaption?: string;
   ImgAlt: string;
   Link?: string; // Optional link
 };
