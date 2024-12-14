@@ -1,0 +1,52 @@
+#Home {
+  width: 100%;
+  flex-shrink: 0;
+  flex-shrink: 0;
+}
+#Home img {
+  display: block;
+}
+#Home h1 {
+  text-align: center;
+  padding: 0.2rem;
+}
+#Home #Intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Home #Intro h1 {
+  padding-bottom: 0.2rem;
+  font-size: 30px;
+}
+#Home #Intro article:nth-of-type(1) {
+  padding: 0.6rem;
+  flex: 1 1 auto;
+}
+#Home #Intro article:nth-of-type(2) {
+  flex: 2 2 auto;
+  min-width: 700px;
+  text-align: center;
+  padding: 0.6rem;
+}
+#Home .secondary h1 {
+  padding: 0.6rem;
+}
+#Home .secondary > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#Home .secondary > div .Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+#Home .secondary > div .Card div {
+  max-width: 251px;
+  word-wrap: break-word;
+}/*# sourceMappingURL=home.css.map */

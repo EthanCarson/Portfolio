@@ -5,27 +5,8 @@ Ethan Carson
 */
 // Reset Styles
 @import "reset";
-
-//Base Variables for Project:
-//Colors
-$PDBLue: hsla(223, 44, 45, 1); //Portfolio Dark Blue Color
-$PBlue: hsla(205, 70, 46, 1); //Portfolio Blue Color
-$PBg: hsla(176, 53, 80, 1); //Portfolio Background Color
-$PGreen: hsla(130, 50, 57, 1); //Portfolio Green Color
-$PDGreen: hsla(158, 41, 31, 1); //Portfolio Dark Green Color
-//Shadows
-$PDBlueS: rgba(50, 21, 93, 0.518);
-$PBlueS: rgba(14, 30, 114, 0.417);
-$PBgS: rgba(101, 158, 199, 0.374);
-$PGreenS: rgba(44, 145, 122, 0.391);
-$PDGreenS: rgba(27, 83, 91, 0.412);
-//Spacing
-$SpaceSM: 0.2rem;
-$SpaceMD: 0.6rem;
-$SpaceLG: 1.2rem;
-$SpaceGap: 5rem;
-//Header Sizes
-$Heading1: 30px;
+@import "functions";
+@import "variables";
 // Base Styling for Project
 html {
     background: url(#);
@@ -39,59 +20,6 @@ html {
 
         background-color: $PBg;
 
-        #Home {
-            width: 100%;
-            flex-shrink: 0;
-            flex-shrink: 0;
-            img {
-                display: block;
-            }
-            h1 {
-                text-align: center;
-                padding: $SpaceSM;
-            }
-            #Intro {
-                @include flex-center;
-                flex-wrap: wrap;
-                h1 {
-                    padding-bottom: $SpaceSM;
-                    font-size: $Heading1;
-                }
-                article:nth-of-type(1) {
-                    padding: $SpaceMD;
-                    flex: 1 1 auto;
-                }
-                article:nth-of-type(2) {
-                    flex: 2 2 auto;
-                    min-width: 700px;
-                    text-align: center;
-                    padding: $SpaceMD;
-                }
-            }
-            .secondary {
-                h1 {
-                    padding: $SpaceMD;
-                }
-                > div {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    .Card {
-                        display: flex; // Use flexbox for layout
-                        flex-direction: column; // Stack the content if needed
-                        align-items: center; // Center items horizontally if needed
-                        padding: $SpaceMD;
-                        padding-left: $SpaceGap;
-                        padding-right: $SpaceGap;
-
-                        div {
-                            max-width: 251px; // Match the image width exactly
-                            word-wrap: break-word; // Ensure wrapping for long text
-                        }
-                    }
-                }
-            }
-        }
         //Fonts
 
         h1,

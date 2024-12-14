@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Interests from "../components/Interests";
 import Accomplish from "../components/Accomplish";
+import "../../styles/aboutme.scss";
 export default function AboutMe() {
   return (
     <div id="AboutMe">

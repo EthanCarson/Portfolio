@@ -94,18 +94,3 @@ a:focus {
     outline-offset: 2px; /* Improves visibility */
 }
 
-//Base "functions" compatible for any project
-
-@mixin flex-basic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
