@@ -1,18 +1,22 @@
 {
   "Projects": {
-    "CorningTravelSite": {
-      "CardImage": "/img/corning.jpg",
-      "HCaption": "Made a Corning Travelsite",
-      "SCaption": "A Travelsite for a local town!",
-      "ImgAlt": "Corning Travelsite",
-      "Link": "/projects/CorningTravelSite"
+    "Websites": {
+      "CorningTravelSite": {
+        "CardImage": "/img/corning.jpg",
+        "HCaption": "Made a Corning Travelsite",
+        "SCaption": "A Travelsite for a local town!",
+        "ImgAlt": "Corning Travelsite",
+        "Link": "/projects/CorningTravelSite"
+      }
     },
-    "CloudTileset": {
-      "CardImage": "/img/Clouds-2.jpg",
-      "HCaption": "Created a Mario World Cloud Tileset",
-      "SCaption": "A passionate cloud tileset for one of my favorite games!",
-      "ImgAlt": "Super Mario World Cloud Tileset",
-      "Link": "/projects/CloudTileset"
+    "PixelArt": {
+      "CloudTileset": {
+        "CardImage": "/img/Clouds-2.jpg",
+        "HCaption": "Created a Mario World Cloud Tileset",
+        "SCaption": "A passionate cloud tileset for one of my favorite games!",
+        "ImgAlt": "Super Mario World Cloud Tileset",
+        "Link": "/projects/CloudTileset"
+      }
     }
   },
   "Highlights": {
