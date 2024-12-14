@@ -134,7 +134,6 @@ html body nav:first-of-type ul {
   flex-wrap: nowrap;
   align-items: center;
   padding-left: 0.6rem;
-  padding-right: 0.6rem;
   background-color: hsl(205, 70%, 46%);
 }
 html body nav:first-of-type ul li {
@@ -156,8 +155,6 @@ html body nav:first-of-type ul li span {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
   color: black;
 }
 html body footer {

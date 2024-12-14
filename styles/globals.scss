@@ -43,7 +43,7 @@ html {
                 flex-wrap: nowrap;
                 align-items: center;
                 padding-left: $SpaceMD;
-                padding-right: $SpaceMD;
+
                 background-color: $PBlue;
 
                 li {
@@ -66,8 +66,7 @@ html {
                         justify-content: center;
                         width: 100%;
                         height: 100%; // Ensure span takes full height of li
-                        padding-left: $SpaceSM;
-                        padding-right: $SpaceSM;
+
                         color: black;
                     }
                 }
