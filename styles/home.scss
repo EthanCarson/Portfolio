@@ -7,10 +7,7 @@
     img {
         display: block;
     }
-    h1 {
-        text-align: center;
-        padding: $SpaceSM;
-    }
+
     #Intro {
         @include flex-center;
         flex-wrap: wrap;

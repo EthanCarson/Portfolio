@@ -1,0 +1,18 @@
+@import "functions";
+@import "variables";
+#AboutMe {
+    @include flex-basic;
+    flex-wrap: wrap;
+    header {
+        min-width: 100%;
+    }
+    section {
+        flex: 2 1 auto;
+    }
+    aside {
+        flex: 1 1 auto;
+        background-color: $PGreen;
+        border-radius: $SpaceMD;
+        box-shadow: 0px 6px 8px -2px $PDGreenS;
+    }
+}

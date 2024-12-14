@@ -6,10 +6,6 @@
 #Home img {
   display: block;
 }
-#Home h1 {
-  text-align: center;
-  padding: 0.2rem;
-}
 #Home #Intro {
   display: flex;
   justify-content: center;
