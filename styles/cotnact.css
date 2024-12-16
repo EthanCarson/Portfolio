@@ -1,1 +1,35 @@
-/*# sourceMappingURL=cotnact.css.map */
+#Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+#Contact header {
+  min-width: 100%;
+}
+#Contact aside {
+  flex: 1 1 35%;
+  border-radius: 0.6rem;
+  padding-left: 0.6rem;
+}
+#Contact section {
+  flex: 2 1 60%;
+}
+#Contact section p {
+  text-align: center;
+}
+#Contact section p a {
+  color: hsl(223, 44%, 45%);
+}
+#Contact section div.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#Contact section button {
+  display: block;
+}/*# sourceMappingURL=cotnact.css.map */

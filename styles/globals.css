@@ -115,7 +115,18 @@ html body {
 }
 html body h1 {
   text-align: center;
-  padding: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+html body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body header h1 {
+  font-size: 45px;
+  text-shadow: 0px 6px 8px white;
 }
 html body h1,
 html body h2,
@@ -124,38 +135,93 @@ html body h3 {
   font-weight: 400;
   font-style: normal;
 }
-html body nav:first-of-type {
+html body nav {
   box-shadow: 0px 6px 8px -2px rgba(14, 30, 114, 0.417);
 }
-html body nav:first-of-type ul {
-  height: 3.5em;
+html body nav ul:first-of-type {
+  height: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   padding-left: 0.6rem;
   background-color: hsl(205, 70%, 46%);
+  /* Optional: Add styles for the links */
 }
-html body nav:first-of-type ul li {
+html body nav ul:first-of-type img {
+  height: 55px;
+  padding-right: 0.6rem;
+}
+html body nav ul:first-of-type #ProjectNav {
+  position: relative; /* Necessary for positioning the dropdown */
+  background-color: hsl(205, 70%, 46%);
+  color: white;
+  /* First-level dropdown (Projects) */
+  /* Show the first-level dropdown on hover */
+}
+html body nav ul:first-of-type #ProjectNav > ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the submenu directly below the parent */
+  left: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  width: 100%; /* Match the width of the parent item */
+}
+html body nav ul:first-of-type #ProjectNav:hover > ul {
+  display: block;
+}
+html body nav ul:first-of-type #ProjectNav li {
+  position: relative; /* Necessary for positioning nested dropdowns */
+  /* Nested dropdowns for WebNav, PixelNav, and ColNav */
+  /* Show nested dropdowns when hovering over the parent li */
+}
+html body nav ul:first-of-type #ProjectNav li #WebNav,
+html body nav ul:first-of-type #ProjectNav li #PixelNav,
+html body nav ul:first-of-type #ProjectNav li #ColNav {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%; /* Position the submenu directly below the parent */
+  left: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(205, 70%, 46%);
+  color: white;
+  width: 100%; /* Match the width of the parent item */
+}
+html body nav ul:first-of-type #ProjectNav li:hover > #WebNav, html body nav ul:first-of-type #ProjectNav li:hover > #PixelNav, html body nav ul:first-of-type #ProjectNav li:hover > #ColNav {
+  display: block;
+}
+html body nav ul:first-of-type #ProjectNav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+html body nav #ProjectNav:hover > ul {
+  display: block;
+}
+html body nav li {
   height: 100%;
   display: flex;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-}
-html body nav:first-of-type ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-}
-html body nav:first-of-type ul li span {
-  display: flex;
   background-color: white;
-  align-items: center;
+  color: black;
+}
+html body nav li a {
+  display: flex;
+  background-color: hsl(205, 70%, 46%);
+  color: white;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  color: black;
 }
 html body footer {
   background-color: hsl(223, 44%, 45%);

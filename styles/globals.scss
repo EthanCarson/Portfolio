@@ -31,7 +31,7 @@ html {
             align-items: center;
             h1 {
                 font-size: $Header;
-                box-shadow: 0px 6px 8px 5px white;
+                text-shadow: 0px 6px 8px white;
             }
         }
         //Fonts
@@ -113,8 +113,7 @@ html {
 
                 /* Optional: Add styles for the links */
                 #ProjectNav a {
-                    display: block;
-                    padding: 10px;
+                    @include flex-center;
                     text-decoration: none;
                     color: white;
                 }

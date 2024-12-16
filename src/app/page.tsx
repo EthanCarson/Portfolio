@@ -7,7 +7,7 @@ export default function Home() {
     <div id="Home">
       <Header
         HImage="/img/Clouds-1.jpg"
-        Heading="Custom Cloud Tileset! (Based On Super Mario World's Map"
+        Heading="Custom Cloud Tileset! (Based On Super Mario World's Map)"
       />
       <section id="Intro">
         <article>

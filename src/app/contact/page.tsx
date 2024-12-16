@@ -30,8 +30,10 @@ export default function Contact() {
             Click here to access my email.
           </a>
         </p>
-        <button>Send Email</button>
-        <button>Call Instead</button>
+        <div className="buttons">
+          <button>Send Email</button>
+          <button>Call Instead</button>
+        </div>
       </section>
     </div>
   );

@@ -20,7 +20,7 @@ export default function CategorySection({ category }: CategorySectionProps) {
   }
 
   return (
-    <section>
+    <article>
       <h2>{category}</h2> {/* Render the category name */}
       <div id={category}>
         {Object.keys(categoryProjects).map((projectType) => {
@@ -34,6 +34,6 @@ export default function CategorySection({ category }: CategorySectionProps) {
           );
         })}
       </div>
-    </section>
+    </article>
   );
 }

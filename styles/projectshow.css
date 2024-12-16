@@ -1,1 +1,47 @@
-/*# sourceMappingURL=projectshow.css.map */
+#Projects section:nth-of-type(1) article:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Projects section:nth-of-type(1) article:nth-of-type(1) img {
+  flex: 1 1 auto;
+  padding: 5rem;
+}
+#Projects section:nth-of-type(1) p {
+  padding: 0.2rem;
+}
+#Projects .secondary h1 {
+  padding-top: 1.2rem;
+  padding: 0.6rem;
+}
+#Projects .secondary h2 {
+  text-align: center;
+}
+#Projects .secondary .Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 251px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+#Projects .secondary a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+}
+#Projects .secondary img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.6rem;
+}
+#Projects .secondary div {
+  text-align: center;
+  padding: 0.6rem;
+}/*# sourceMappingURL=projectshow.css.map */

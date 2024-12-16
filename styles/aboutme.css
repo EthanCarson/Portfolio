@@ -4,17 +4,57 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  display: flex;
   flex-wrap: wrap;
 }
 #AboutMe header {
   min-width: 100%;
 }
 #AboutMe section {
+  flex: 2 1 60%;
+  display: flex;
+  flex-direction: column;
+}
+#AboutMe section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+#AboutMe section > div img {
+  flex: 1 1 auto;
+}
+#AboutMe section > div p {
   flex: 2 1 auto;
 }
 #AboutMe aside {
-  flex: 1 1 auto;
+  flex: 1 1 35%;
   background-color: hsl(130, 50%, 57%);
   border-radius: 0.6rem;
   box-shadow: 0px 6px 8px -2px rgba(27, 83, 91, 0.412);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#AboutMe aside h1 {
+  padding-top: 1.2rem;
+}
+#AboutMe aside .image-container {
+  margin: 0;
+  padding: 0;
+}
+#AboutMe aside div {
+  display: flex;
+  flex-direction: column;
+}
+#AboutMe aside div img {
+  flex: 1 1 100%;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#AboutMe aside button {
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=aboutme.css.map */
