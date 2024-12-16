@@ -1,4 +1,5 @@
 export type Project = {
+  Name: string;
   CardImage: string;
   HCaption: string;
   SCaption: string;

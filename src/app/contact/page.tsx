@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Image from "next/image";
+import "../../../styles/aboutme.scss";
 export default function Contact() {
   return (
     <div id="Contact">

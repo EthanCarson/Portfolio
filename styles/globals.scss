@@ -38,52 +38,100 @@ html {
 
             // Apply styles only to the first ul element within the nav
             ul:first-of-type {
-                height: 3.5em; // Ensure ul has a height
+                height: 60px; // Ensure ul has a height
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 align-items: center;
                 padding-left: $SpaceMD;
                 background-color: $PBlue;
+                img {
+                    height: 55px;
+                    padding-right: $SpaceMD;
+                }
+                #ProjectNav {
+                    position: relative; /* Necessary for positioning the dropdown */
+                    background-color: $PBlue;
+                    color: white;
 
-                li {
-                    height: 100%; // Ensure li takes up full height of ul
-                    display: flex; // Change to flex for items to stretch properly
-                    flex-grow: 1; // Allow li elements to grow and take equal space
-                    justify-content: center; // Optionally center the links inside the li
-                    align-items: center; // Ensure child elements center vertically
-
-                    a {
-                        display: block; // Make anchor fill li element
-                        color: white;
-                        text-align: center;
+                    /* First-level dropdown (Projects) */
+                    > ul {
+                        display: none;
+                        position: absolute;
+                        top: 100%; /* Position the submenu directly below the parent */
+                        left: 0;
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                        background-color: #333;
+                        width: 100%; /* Match the width of the parent item */
                     }
 
-                    span {
-                        display: flex;
-                        background-color: white;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        height: 100%; // Ensure span takes full height of li
-
-                        color: black;
+                    /* Show the first-level dropdown on hover */
+                    &:hover > ul {
+                        display: block;
                     }
-                    ul {
-                        li,
-                        a,
-                        span,
-                        ul {
-                            display: none;
-                        }
-                        span {
+
+                    li {
+                        position: relative; /* Necessary for positioning nested dropdowns */
+
+                        /* Nested dropdowns for WebNav, PixelNav, and ColNav */
+                        #WebNav,
+                        #PixelNav,
+                        #ColNav {
+                            display: none; /* Initially hidden */
+                            position: absolute;
+                            top: 100%; /* Position the submenu directly below the parent */
+                            left: 0;
+                            list-style-type: none;
+                            padding: 0;
+                            margin: 0;
                             background-color: $PBlue;
                             color: white;
+                            width: 100%; /* Match the width of the parent item */
+                        }
+
+                        /* Show nested dropdowns when hovering over the parent li */
+                        &:hover > #WebNav,
+                        &:hover > #PixelNav,
+                        &:hover > #ColNav {
+                            display: block;
                         }
                     }
                 }
+
+                /* Optional: Add styles for the links */
+                #ProjectNav a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            #ProjectNav:hover > ul {
+                display: block;
+            }
+            li {
+                height: 100%; // Ensure li takes up full height of ul
+                display: flex; // Change to flex for items to stretch properly
+                flex-grow: 1; // Allow li elements to grow and take equal space
+                justify-content: center; // Optionally center the links inside the li
+                align-items: center; // Ensure child elements center vertically
+                background-color: white;
+                color: black;
+
+                a {
+                    display: flex; // Make anchor fill li element
+                    background-color: $PBlue;
+                    color: white;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
+
         //Footer Styles
         footer {
             background-color: $PDBLue;

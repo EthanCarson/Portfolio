@@ -8,6 +8,15 @@
     }
     section {
         flex: 2 1 auto;
+        div {
+            @include flex-center;
+            img {
+                flex: 1 1 auto;
+            }
+            p {
+                flex: 2 1 auto;
+            }
+        }
     }
     aside {
         flex: 1 1 auto;

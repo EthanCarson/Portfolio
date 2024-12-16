@@ -2,6 +2,7 @@
   "Projects": {
     "Websites": {
       "CorningTravelSite": {
+        "Name": "Corning Travelsite",
         "CardImage": "/img/corning.jpg",
         "HCaption": "Made a Corning Travelsite",
         "SCaption": "A Travelsite for a local town!",
@@ -11,6 +12,7 @@
         "Head1": "Travelsite for Corning, NY!"
       },
       "CSS Showcase": {
+        "Name": "CSS Showcase",
         "CardImage": "/img/css.png",
         "HCaption": "Made a webpage showcasing CSS",
         "SCaption": "A full CSS showcase with pixel art!",
@@ -21,6 +23,7 @@
     },
     "Pixel Art": {
       "CloudTileset": {
+        "Name": "SMW Cloud Tileset",
         "CardImage": "/img/Clouds-2.jpg",
         "HCaption": "Created a Mario World Cloud Tileset",
         "SCaption": "A passionate cloud tileset for one of my favorite games!",
@@ -42,8 +45,9 @@
     },
     "College Projects": {
       "MarioInfographic": {
+        "Name": "Mario Infographic",
         "CardImage": "/img/marinfographic.png",
-        "HCaption": "Made a Super Mario Bros&trade infographic",
+        "HCaption": "Made a Super Mario Bros&trade; infographic",
         "SCaption": "A Themed infographic for the original Super Mario Bros&trade!",
         "ImgAlt": "An Infographic with a Retro Esthetic",
         "Link": "/projects/MarioInfographic",
@@ -54,6 +58,7 @@
         "LegalNotice": "Super Mario&trade and Super Mario Bros&trade; are also property of Nintendo. All rights go to their respective owners."
       },
       "E-Shoes": {
+        "Name": "E-Shoes",
         "CardImage": "/img/eshoes.png",
         "HCaption": "Wireframe project for E-Shoes",
         "SCaption": "A Wireframe website for the fictional E-Shoes!",
@@ -63,6 +68,7 @@
         "Head1": "A Wireframe Website for...E-Shoes?"
       },
       "Workshop": {
+        "Name": "Workshop",
         "CardImage": "/img/workshop.png",
         "HCaption": "A 'workshop' database with forms",
         "SCaption": "A 'workshop' database with easy access forms for data!",
@@ -74,6 +80,7 @@
         "ExtraHTML": "<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrgOh1g7l3TFTpmH\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrpaUUhOUNftOKyd?viewControls=on\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrqi4ZCImgrLzfr5\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrZ4ZLubZJC0u1ye?viewControls=on\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shraPVTZqd1a5Dzso\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>"
       },
       "Messy Problem": {
+        "Name": "Messy Problem",
         "CardImage": "/img/messy.png",
         "HCaption": "Made a Document for A Messy Problem",
         "SCaption": "Problem-solving pseudocode for a sticky situation!",

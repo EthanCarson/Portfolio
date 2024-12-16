@@ -22,7 +22,7 @@ export default function CategorySection({ category }: CategorySectionProps) {
   return (
     <section>
       <h2>{category}</h2> {/* Render the category name */}
-      <div className="card-container">
+      <div id={category}>
         {Object.keys(categoryProjects).map((projectType) => {
           // `projectType` is the type of project (like 'Websites', 'PixelArt', etc.)
 

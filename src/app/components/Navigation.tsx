@@ -2,69 +2,74 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Data } from "../components/DataTypes"; // Assuming your data types are exported here
-import dataJson from "../../../data/data.json"; // Importing JSON data
-
-const data: Data = dataJson; // Ensuring the data is typed correctly
-
-export default function Navigation() {
-  const pathname = usePathname(); // Get the current route
-
-  // Define the basic navigation links
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/aboutme", label: "About Me" },
-    { href: "/projects", label: "Projects", hasDropdown: true }, // Projects will have a dropdown
-    { href: "/contact", label: "Contact" }
-  ];
-
-  // Extract project categories and their respective projects dynamically
-  const projectsData = Object.entries(data.Projects).reduce(
-    (acc, [category, projects]) => {
-      const projectLinks = Object.entries(projects).map(([projectKey]) => ({
-        href: `/projects/${projectKey}`, // Use the projectKey to create the URL
-        label: projectKey // Use the projectKey itself as the label
-      }));
-
-      acc[category] = projectLinks;
-      return acc;
-    },
-    {} as Record<string, { href: string; label: string }[]>
-  );
+export default function Navbar() {
+  const pathname = usePathname(); // To determine the current route
 
   return (
     <nav>
       <ul>
         <li>
-          <img src="/navlogo.svg" alt="Logo" />
+          <img src="/navlogo.svg" alt="Logo" height="40px" />
         </li>
-        {navLinks.map((link) => (
-          <li key={link.href}>
-            {link.hasDropdown ? (
-              <div className="dropdown">
-                <li>{link.label}</li> {/* Projects will display as text */}
-                <ul className="dropdown-menu">
-                  {Object.entries(projectsData).map(([category, items]) => (
-                    <li key={category}>
-                      <span>{category}</span>
-                      <ul>
-                        {items.map((item) => (
-                          <li key={item.href}>
-                            <Link href={item.href}>{item.label}</Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : pathname === link.href ? (
-              <span>{link.label}</span> // Display as text only for current page
-            ) : (
-              <Link href={link.href}>{link.label}</Link>
-            )}
-          </li>
-        ))}
+        <li>
+          {pathname === "/" ? (
+            "Home" // Display as text only for current page
+          ) : (
+            <Link href="/">Home</Link>
+          )}
+        </li>
+
+        <li>
+          {pathname === "/aboutme" ? (
+            "About Me" // Display as text only for current page
+          ) : (
+            <Link href="/aboutme">About Me</Link>
+          )}
+        </li>
+
+        <li id="ProjectNav">
+          Projects:
+          <ul>
+            <li>
+              {pathname === "/projects" ? (
+                "Showcase" // Display as text only for current page
+              ) : (
+                <Link href="/projects">Showcase</Link>
+              )}
+            </li>
+
+            <li>
+              {pathname === "/projects" ? (
+                "Websites" // Display as text only for current page
+              ) : (
+                <Link href="/projects#Websites">Websites</Link>
+              )}
+            </li>
+
+            <li>
+              {pathname === "/projects" ? (
+                "Pixel Art" // Display as text only for current page
+              ) : (
+                <Link href="/projects#Pixel Art">Pixel Art</Link>
+              )}
+            </li>
+            <li>
+              {pathname === "/projects" ? (
+                "College" // Display as text only for current page
+              ) : (
+                <Link href="/projects#College Projects">College</Link>
+              )}
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          {pathname === "/contact" ? (
+            "Contact" // Display as text only for current page
+          ) : (
+            <Link href="/contact">Contact</Link>
+          )}
+        </li>
       </ul>
     </nav>
   );
