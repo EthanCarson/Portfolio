@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     header {
         min-width: 100%; // You might want to adjust or remove this
+        height: 140px;
+        background-size: cover;
 
         h1 {
             font-size: $Header;

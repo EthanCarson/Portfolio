@@ -59,6 +59,9 @@ html {
                 align-items: center;
 
                 background-color: $PBlue;
+                a:hover {
+                    background-color: $PBlueS;
+                }
                 img {
                     height: 55px;
                     padding-right: $SpaceMD;

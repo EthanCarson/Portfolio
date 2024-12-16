@@ -2,6 +2,10 @@
 @import "variables";
 
 #Projects {
+    header {
+        height: 140px;
+        background-size: cover;
+    }
     section:nth-of-type(1) {
         article:nth-of-type(1) {
             @include flex-center;
