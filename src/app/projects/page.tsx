@@ -5,7 +5,7 @@ import "../../../styles/projectshow.scss";
 export default function Projects() {
   return (
     <div id="Projects">
-      <Header HImage="#" Heading="Ethan Carson" />
+      <Header HImage="/img/Clouds-1.jpg" Heading="Projects:" />
       <h1>Custom Web Pages, Music, Art and More!</h1>
       <section>
         <article>

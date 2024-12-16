@@ -4,7 +4,7 @@ import "../../../styles/cotnact.scss";
 export default function Contact() {
   return (
     <div id="Contact">
-      <Header HImage="#" Heading="Ethan Carson" />
+      <Header HImage="/img/contactheader.jpg" Heading="Contact Me:" />
       <aside>
         <Image src="/img/Me.png" alt="Ethan Carson" width="222" height={215} />
         <p>

@@ -5,7 +5,7 @@ import "../../../styles/aboutme.scss";
 export default function AboutMe() {
   return (
     <div id="AboutMe">
-      <Header HImage="#" Heading="Ethan Carson" />
+      <Header HImage="/img/aboutheader.jpg" Heading="About Me:" />
       <section>
         <h1>Interests:</h1>
         <Interests>Golf</Interests>
