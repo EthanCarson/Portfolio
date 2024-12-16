@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Image from "next/image";
 export default function Projects() {
   return (
     <div id="Projects">
@@ -6,8 +7,18 @@ export default function Projects() {
       <h1>Custom Web Pages, Music, Art and More!</h1>
       <section>
         <article>
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <Image
+            src="/img/webdev.jpg"
+            alt="Web Development"
+            width={378}
+            height={378}
+          />
+          <Image
+            src="/img/music.jpg"
+            alt="Musical Chorale"
+            width={378}
+            height={378}
+          />
         </article>
         <article>
           <p>Stuff</p>
