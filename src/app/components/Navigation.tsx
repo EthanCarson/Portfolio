@@ -19,15 +19,18 @@ export default function Navigation() {
   ];
 
   // Extract project categories and their respective projects dynamically
-  const projectsData = Object.entries(data.Projects).reduce((acc, [category, projects]) => {
-    const projectLinks = Object.entries(projects).map(([projectKey]) => ({
-      href: `/projects/${projectKey}`, // Use the projectKey to create the URL
-      label: projectKey // Use the projectKey itself as the label
-    }));
+  const projectsData = Object.entries(data.Projects).reduce(
+    (acc, [category, projects]) => {
+      const projectLinks = Object.entries(projects).map(([projectKey]) => ({
+        href: `/projects/${projectKey}`, // Use the projectKey to create the URL
+        label: projectKey // Use the projectKey itself as the label
+      }));
 
-    acc[category] = projectLinks;
-    return acc;
-  }, {} as Record<string, { href: string; label: string }[]>);
+      acc[category] = projectLinks;
+      return acc;
+    },
+    {} as Record<string, { href: string; label: string }[]>
+  );
 
   return (
     <nav>
@@ -39,7 +42,7 @@ export default function Navigation() {
           <li key={link.href}>
             {link.hasDropdown ? (
               <div className="dropdown">
-                <span>{link.label}</span> {/* Projects will display as text */}
+                <li>{link.label}</li> {/* Projects will display as text */}
                 <ul className="dropdown-menu">
                   {Object.entries(projectsData).map(([category, items]) => (
                     <li key={category}>

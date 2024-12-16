@@ -33,17 +33,17 @@ html {
             font-style: normal;
         }
         //Navitaion Styles
-        nav:first-of-type {
+        nav {
             box-shadow: 0px 6px 8px -2px $PBlueS;
 
-            ul {
+            // Apply styles only to the first ul element within the nav
+            ul:first-of-type {
                 height: 3.5em; // Ensure ul has a height
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 align-items: center;
                 padding-left: $SpaceMD;
-
                 background-color: $PBlue;
 
                 li {
@@ -68,6 +68,18 @@ html {
                         height: 100%; // Ensure span takes full height of li
 
                         color: black;
+                    }
+                    ul {
+                        li,
+                        a,
+                        span,
+                        ul {
+                            display: none;
+                        }
+                        span {
+                            background-color: $PBlue;
+                            color: white;
+                        }
                     }
                 }
             }

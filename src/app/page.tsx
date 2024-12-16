@@ -11,8 +11,8 @@ export default function Home() {
           <Image
             src="/img/Me.png"
             alt="Ethan Carson"
-            width="444"
-            height="430"
+            width="360"
+            height={300}
           />
         </article>
         <article>
