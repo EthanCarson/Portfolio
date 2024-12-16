@@ -15,23 +15,26 @@ interface Props {
 }
 
 export default function Header({ data, HImage, Heading, children }: Props) {
+  // Ensure 'children' is used properly, assuming it represents the reference name
   const referenceName = typeof children === "string" ? children : "";
 
-  // Safely access the project data from Projects or Highlights
+  // Safely access the project data from Projects
   const headerData = Object.values(data?.Projects || {})
     .map((category: Record<string, ProjectData>) => category[referenceName])
-    .find(Boolean);
+    .find(Boolean);  // Find the first non-falsy match
 
+  // Destructure and provide default values if no match is found
   const { HImage: dynamicHImage = "", Heading: dynamicHeading = "" } =
-    headerData || {};
+    headerData || {}; // fallback to empty string if headerData is undefined
 
-  // Use the fallback value for image and heading if not available
-  const finalHImage = dynamicHImage || HImage;
-  const finalHeading = dynamicHeading || Heading;
+  // Final fallback values
+  const finalHImage = dynamicHImage || HImage || ''; // If dynamicHImage is missing, fallback to HImage or empty string
+  const finalHeading = dynamicHeading || Heading || ''; // Same for Heading
 
   return (
     <header style={{ backgroundImage: `url(${finalHImage})` }}>
       <h1>{finalHeading}</h1>
+      {children && <div>{children}</div>} {/* Render children if provided */}
     </header>
   );
 }
