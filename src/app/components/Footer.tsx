@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer>
@@ -11,9 +12,13 @@ export default function Footer() {
           <img src="/logo.svg" width={100} alt="Logo" />
         </div>
         <div id="Social">
-          <img src="#" alt="Facebook" />
-          <img src="#" alt="LinkedIn" />
-          <img src="#" alt="Youtube" />
+          <a href="https://www.facebook.com/people/Ethan-Carson/pfbid0kH1xukHcJBvptKQFgZznEoMND3JAaPXF1U9eSNUKypQ7xhBarVFoTZz7Wv9HJE89l/">
+            <Image src="/facebook.svg" alt="Facebook" width={25} height={25} />
+          </a>
+          <a href="https://www.linkedin.com/in/ethan-carson-98978332a/">
+            <Image src="/linkedin.svg" alt="LinkedIn" width={25} height={25} />
+          </a>
+          <Image src="/youtube.svg" alt="Youtube" width={25} height={25} />
         </div>
       </div>
       <div id="Copyright">

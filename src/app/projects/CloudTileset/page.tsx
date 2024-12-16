@@ -5,7 +5,7 @@ import "../../../../styles/project.css";
 export default function Project() {
   return (
     <div id="Project">
-      <Header HImage="/img/aboutheader.jpg" Heading="About Me:" />
+      <Header HImage="/img/Clouds-1.jpg" Heading="SMW Sky Tileset!" />
       <h1>What&apos;s This?</h1>
       <p>
         This is a pixel art tile set in the same style as Super Mario World,
@@ -19,24 +19,24 @@ export default function Project() {
       </p>
       <div className="secondary">
         <h1>Image Showcase!</h1>
-        <Image src="/img/image.png" alt="Map Image" width={200} height={200} />
+        <Image src="/img/image.png" alt="Map Image" width={350} height={350} />
         <Image
           src="/img/image (1).png"
           alt="Map Image"
-          width={200}
-          height={200}
+          width={350}
+          height={350}
         />
         <Image
           src="/img/image (2).png"
           alt="Map Image"
-          width={200}
-          height={200}
+          width={350}
+          height={350}
         />
         <Image
           src="/img/imagefix.png"
           alt="Map Image"
-          width={200}
-          height={200}
+          width={350}
+          height={350}
         />
         <div className="legal">
           <em>

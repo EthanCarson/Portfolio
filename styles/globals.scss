@@ -158,7 +158,7 @@ html {
 
             width: 100%;
             img {
-                display: inline-block;
+                display: block;
             }
             div {
                 flex: 1 1 auto;
@@ -187,6 +187,9 @@ html {
                     }
                 }
                 #Social {
+                    img {
+                        padding: 5px;
+                    }
                     display: flex;
                     justify-content: center;
                     flex: 1 1 auto;
