@@ -1,62 +1,27 @@
-import { GetStaticPaths, GetStaticProps } from 'next'
-import Image from 'next/image'
-import { Project } from '../../components/DataTypes'
-import fs from 'fs'
-import path from 'path'
-
-// Function to get all project slugs from the data file
-export const getStaticPaths: GetStaticPaths = async () => {
-  const data = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), 'data', 'data.json'), 'utf-8')
-  )
-
-  // Collect all the paths for projects across the different categories
-  const paths = []
-
-  // Iterate over each category in the 'Projects' section
-  for (const category in data.Projects) {
-    // For each project within the category
-    for (const projectSlug in data.Projects[category]) {
-      paths.push({
-        params: { project: projectSlug }, // Use the project name as the dynamic part
-      })
-    }
-  }
-
-  return {
-    paths,
-    fallback: false, // or 'blocking' depending on your preference for SSR
-  }
-}
-
-// Function to fetch project data based on the slug
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { project } = params as { project: string }
-  const data = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), 'data', 'data.json'), 'utf-8')
-  )
-
-  // Find the project by the dynamic 'project' slug
-  const projectData = data.Projects[project]
-
-  if (!projectData) {
-    return {
-      notFound: true, // If project data doesn't exist, return a 404
-    }
-  }
-
-  return {
-    props: {
-      project: projectData,
-    },
-  }
-}
+import fs from "fs";
+import path from "path";
+import Image from "next/image";
+import { Project } from "../../components/DataTypes";
 
 interface ProjectPageProps {
-  project: Project
+  project: Project;
 }
 
-const ProjectPage = ({ project }: ProjectPageProps) => {
+const ProjectPage = async ({ params }: { params: { project: string } }) => {
+  const { project } = params;
+
+  // Fetching the data directly inside the async function
+  const data = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "data", "data.json"), "utf-8")
+  );
+
+  // Finding the project data by the dynamic 'project' slug
+  const projectData = data.Projects[project];
+
+  if (!projectData) {
+    return <div>Project not found</div>; // Handle project not found
+  }
+
   const {
     CardImage,
     HCaption,
@@ -66,8 +31,8 @@ const ProjectPage = ({ project }: ProjectPageProps) => {
     Header,
     Head1,
     PageDesc,
-    Secondary,
-  } = project
+    Secondary
+  } = projectData;
 
   return (
     <div>
@@ -101,7 +66,27 @@ const ProjectPage = ({ project }: ProjectPageProps) => {
         {CardImage && <Image src={CardImage} alt={ImgAlt} />}
       </main>
     </div>
-  )
+  );
+};
+
+// Function to generate dynamic paths for all projects
+export async function generateProjectPaths() {
+  const data = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "data", "data.json"), "utf-8")
+  );
+
+  const paths = [];
+
+  // Iterate over the categories and projects to generate paths
+  for (const category in data.Projects) {
+    for (const projectSlug in data.Projects[category]) {
+      paths.push({
+        params: { project: projectSlug } // Use the project key as the dynamic part
+      });
+    }
+  }
+
+  return paths;
 }
 
-export default ProjectPage
+export default ProjectPage;
