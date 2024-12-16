@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Image from "next/image";
-import "../../../styles/cotnact.scss";
+import "../../../styles/cotnact.css";
 export default function Contact() {
   return (
     <div id="Contact">

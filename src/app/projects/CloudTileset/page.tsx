@@ -1,7 +1,7 @@
 // Ensure the file is in the correct directory: /app/projects/CloudTileset/page.js
 import Header from "@/app/components/Header"; // Make sure Header component exists at this path
 import Image from "next/image";
-import "../../../../styles/project.scss";
+import "../../../../styles/project.css";
 export default function Project() {
   return (
     <div id="Project">
