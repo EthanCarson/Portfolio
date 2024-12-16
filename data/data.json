@@ -109,14 +109,9 @@
     },
 
     "BoardGames": {
-      "imgae": "/img/boardgames.jpg",
+      "image": "/img/boardgames.jpg",
       "ImgAlt": "Dice on a Table",
       "Description": "Every now and then, it can be so awarding to sit down with family and friends and play a great board game. While I’m not the most hardcore fan out there, I love learning and playing tons of tabletop games. I have always fought for a full Dungeons and Dragons campaign (though never played through one). I also enjoy the more complex board games, and I can admire when a board game comes with quality pieces."
-    },
-    "Music": {
-      "image": "UhOh",
-      "ImgAlt": "Music",
-      "Description": "Oopie"
     }
   }
 }

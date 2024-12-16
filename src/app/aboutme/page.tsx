@@ -9,19 +9,14 @@ export default function AboutMe() {
       <section>
         <h1>Interests:</h1>
         <Interests>Golf</Interests>
-        <Interests>Pixel Art</Interests>
-        <Interests>Retro Gaming</Interests>
-        <Interests>Board Games</Interests>
-        <Interests>Music</Interests>
+        <Interests>Pixel</Interests>
+        <Interests>Retro</Interests>
+        <Interests>BoardGames</Interests>
       </section>
       <aside>
         <h1>Accomplishments:</h1>
         <section>
-          <Accomplish>NHS</Accomplish>
-          <Accomplish>EverydayHeroes</Accomplish>
-          <Accomplish>Musical</Accomplish>
-          <Accomplish>AllCounty</Accomplish>
-          <Accomplish>Top10</Accomplish>
+          <Accomplish />
         </section>
       </aside>
     </div>
