@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Image from "next/image";
+import CategorySection from "../components/CategorySection";
 export default function Projects() {
   return (
     <div id="Projects">
@@ -24,7 +25,11 @@ export default function Projects() {
           <p>Stuff</p>
         </article>
       </section>
-      <div>Project Showcase</div>
+      <section className="secondary">
+        <CategorySection category="Websites" />
+        <CategorySection category="Pixel Art" />
+        <CategorySection category="College Projects" />
+      </section>
     </div>
   );
 }
