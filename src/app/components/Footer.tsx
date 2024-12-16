@@ -8,7 +8,7 @@ export default function Footer() {
 
       <div id="Icons">
         <div id="Logo">
-          <img src="#" alt="Logo" />{" "}
+          <img src="/logo.svg" width={100} alt="Logo" />
         </div>
         <div id="Social">
           <img src="#" alt="Facebook" />

@@ -5,7 +5,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div id="Home">
-      <Header>PixelArt</Header>
+      <Header
+        HImage="/img/Clouds-1.jpg"
+        Heading="Custom Cloud Tileset! (Based On Super Mario World's Map"
+      />
       <section id="Intro">
         <article>
           <Image
