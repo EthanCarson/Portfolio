@@ -1,0 +1,23 @@
+@import "functions";
+@import "variables";
+
+#Project {
+    h1 {
+        padding: $SpaceMD;
+    }
+    p {
+        padding: $SpaceSM;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: $SpaceMD;
+    }
+    .legal {
+        padding: $SpaceMD;
+    }
+    iframe {
+        min-width: 100%;
+    }
+}

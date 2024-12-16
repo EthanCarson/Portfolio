@@ -128,6 +128,9 @@ html body header h1 {
   font-size: 45px;
   text-shadow: 0px 6px 8px white;
 }
+html body p {
+  text-indent: 1.2rem;
+}
 html body h1,
 html body h2,
 html body h3 {
@@ -144,7 +147,6 @@ html body nav ul:first-of-type {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  padding-left: 0.6rem;
   background-color: hsl(205, 70%, 46%);
   /* Optional: Add styles for the links */
 }

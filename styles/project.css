@@ -1,0 +1,18 @@
+#Project h1 {
+  padding: 0.6rem;
+}
+#Project p {
+  padding: 0.2rem;
+}
+#Project img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.6rem;
+}
+#Project .legal {
+  padding: 0.6rem;
+}
+#Project iframe {
+  min-width: 100%;
+}/*# sourceMappingURL=project.css.map */
