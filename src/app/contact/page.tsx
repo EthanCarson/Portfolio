@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Image from "next/image";
-import "../../../styles/aboutme.scss";
+import "../../../styles/cotnact.scss";
 export default function Contact() {
   return (
     <div id="Contact">
@@ -27,7 +27,7 @@ export default function Contact() {
           my page. As such, the contact form is currently unavalible until
           proper time is dedicated to testing and deubugging.{" "}
           <a href="mailto:digitalec414@outlook.com">
-            Click here to access my email.{" "}
+            Click here to access my email.
           </a>
         </p>
         <button>Send Email</button>

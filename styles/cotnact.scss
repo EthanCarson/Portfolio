@@ -1,0 +1,29 @@
+@import "functions";
+@import "variables";
+#Contact {
+    @include flex-basic;
+    display: flex; // Ensure the container is using flexbox
+    flex-wrap: wrap;
+    header {
+        min-width: 100%; // You might want to adjust or remove this
+    }
+    aside {
+        flex: 1 1 35%; // This takes up the remaining 35% space
+
+        border-radius: $SpaceMD;
+        padding-left: $SpaceMD;
+    }
+    section {
+        flex: 2 1 60%; // Ensure it's flexible but takes up 60% of the space
+        p {
+            text-align: center;
+            a {
+                color: $PDBLue;
+            }
+        }
+        button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
