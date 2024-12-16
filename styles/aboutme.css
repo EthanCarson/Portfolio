@@ -9,6 +9,8 @@
 }
 #AboutMe header {
   min-width: 100%;
+  height: 140px;
+  background-size: cover;
 }
 #AboutMe section {
   flex: 2 1 60%;

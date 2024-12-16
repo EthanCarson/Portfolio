@@ -1,3 +1,7 @@
+#Projects header {
+  height: 140px;
+  background-size: cover;
+}
 #Projects section:nth-of-type(1) article:nth-of-type(1) {
   display: flex;
   justify-content: center;

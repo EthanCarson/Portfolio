@@ -150,6 +150,9 @@ html body nav ul:first-of-type {
   background-color: hsl(205, 70%, 46%);
   /* Optional: Add styles for the links */
 }
+html body nav ul:first-of-type a:hover {
+  background-color: rgba(14, 30, 114, 0.417);
+}
 html body nav ul:first-of-type img {
   height: 55px;
   padding-right: 0.6rem;
