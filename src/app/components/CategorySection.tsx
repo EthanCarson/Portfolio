@@ -1,5 +1,5 @@
 // CategorySection.tsx
-//Generated with the help of AI
+// Generated with the help of AI
 import React from "react";
 import Card from "../components/Card";
 import { Data } from "../components/DataTypes"; // Assuming your data types are exported here
@@ -23,10 +23,13 @@ export default function CategorySection({ category }: CategorySectionProps) {
     <section>
       <h2>{category}</h2> {/* Render the category name */}
       <div className="card-container">
-        {Object.keys(categoryProjects).map((projectKey) => {
+        {Object.keys(categoryProjects).map((projectType) => {
+          // `projectType` is the type of project (like 'Websites', 'PixelArt', etc.)
+
           return (
-            <Card key={projectKey} isHomePage={false}>
-              {projectKey} {/* The project key (like 'CorningTravelSite') */}
+            <Card key={projectType} isHomePage={false}>
+              {projectType}
+              {/* Now referencing the individual project */}
             </Card>
           );
         })}

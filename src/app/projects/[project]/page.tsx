@@ -7,21 +7,34 @@ interface ProjectPageProps {
   project: Project;
 }
 
-const ProjectPage = async ({ params }: { params: { project: string } }) => {
-  const { project } = params;
+const ProjectPage = async ({
+  params
+}: {
+  params: { projectCategory: string; project: string };
+}): Promise<JSX.Element> => {
+  const { projectCategory, project } = params;
 
-  // Fetching the data directly inside the async function
-  const data = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), "data", "data.json"), "utf-8")
-  );
+  // Fetch the project data from the JSON file
+  const data: { Projects: Record<string, Record<string, Project>> } =
+    JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "data", "data.json"), "utf-8")
+    );
 
-  // Finding the project data by the dynamic 'project' slug
-  const projectData = data.Projects[project];
+  // Validate the category and project existence
+  const categoryData = data.Projects[projectCategory];
+  if (!categoryData) {
+    return <div>Project category not found</div>; // Handle category not found
+  }
 
+  const projectData = categoryData[project];
   if (!projectData) {
     return <div>Project not found</div>; // Handle project not found
   }
 
+  // Create the props object using the ProjectPageProps interface
+  const pageProps: ProjectPageProps = { project: projectData };
+
+  // Destructure project properties from pageProps
   const {
     CardImage,
     HCaption,
@@ -32,7 +45,7 @@ const ProjectPage = async ({ params }: { params: { project: string } }) => {
     Head1,
     PageDesc,
     Secondary
-  } = projectData;
+  } = pageProps.project;
 
   return (
     <div>
@@ -70,23 +83,21 @@ const ProjectPage = async ({ params }: { params: { project: string } }) => {
 };
 
 // Function to generate dynamic paths for all projects
-export async function generateProjectPaths() {
-  const data = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), "data", "data.json"), "utf-8")
+export async function generateStaticPaths() {
+  const data: { Projects: Record<string, Record<string, Project>> } =
+    JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "data", "data.json"), "utf-8")
+    );
+
+  // Generate paths for each project under each category
+  const paths = Object.entries(data.Projects).flatMap(
+    ([categoryKey, projects]) =>
+      Object.keys(projects).map((projectKey) => ({
+        params: { projectCategory: categoryKey, project: projectKey }
+      }))
   );
 
-  const paths = [];
-
-  // Iterate over the categories and projects to generate paths
-  for (const category in data.Projects) {
-    for (const projectSlug in data.Projects[category]) {
-      paths.push({
-        params: { project: projectSlug } // Use the project key as the dynamic part
-      });
-    }
-  }
-
-  return paths;
+  return { paths, fallback: false }; // Next.js expects this format
 }
 
 export default ProjectPage;
