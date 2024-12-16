@@ -12,7 +12,9 @@ export type Project = {
   Secondary?: {
     PageH1?: string; // Optional H1 for secondary details
     Img1?: string; // Optional image for secondary details
-    ImgAlt1?: string; // Alt text for secondary image
+    Img2?: string; // Optional image for secondary details
+    Img3?: string; // Optional image for secondary details
+    Img4?: string; // Optional image for secondary details
     LegalNotice?: string; // Optional legal notice field
   };
 };
