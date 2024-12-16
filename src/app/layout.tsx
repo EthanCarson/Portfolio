@@ -5,12 +5,12 @@ import Head from "next/head";
 import { Press_Start_2P } from "next/font/google";
 import "../../styles/globals.css"; // Ensure the SASS file is imported
 
-// Initialize the font with desired options
 const pressStart2P = Press_Start_2P({
-  weight: ["400"], // Specify the font weight(s) you need
-  subsets: ["latin"] // Specify the character subset(s) you need
+  weight: ["400"],
+  subsets: ["latin"]
 });
 
+// Define the RootLayoutProps type at the top
 type RootLayoutProps = {
   children: React.ReactNode;
   headerProps?: {
@@ -19,6 +19,7 @@ type RootLayoutProps = {
   };
 };
 
+// Correctly export the default function as a named function
 export default function RootLayout({ children, headerProps }: RootLayoutProps) {
   const { HImage = "", Heading = "" } = headerProps || {};
 
