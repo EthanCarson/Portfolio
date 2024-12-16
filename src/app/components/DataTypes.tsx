@@ -6,6 +6,15 @@ export type Project = {
   Link: string;
   Video?: string; // Optional field for video
   Description?: string; // Optional description field
+  Header?: string; // Optional header field
+  Head1?: string; // Secondary header for details
+  PageDesc?: string; // Page description field
+  Secondary?: {
+    PageH1?: string; // Optional H1 for secondary details
+    Img1?: string; // Optional image for secondary details
+    ImgAlt1?: string; // Alt text for secondary image
+    LegalNotice?: string; // Optional legal notice field
+  };
 };
 
 export type Highlight = {
@@ -24,7 +33,16 @@ export type Interest = {
 
 // Update to use `Record<string, T>` for dynamic keys
 export type Data = {
-  Projects: Record<string, Record<string, Project>>; // Projects is now a nested record (category -> project)
+  Projects: Record<
+    string,
+    Record<
+      string,
+      Project & {
+        PageH1?: string; // Top-level PageH1 field for nested projects
+        LegalNotice?: string; // Top-level LegalNotice field
+      }
+    >
+  >; // Projects is now a nested record (category -> project)
   Highlights: Record<string, Highlight>; // Highlights is a simple record
   Interests: Record<string, Interest>; // Interests is a simple record
 };
