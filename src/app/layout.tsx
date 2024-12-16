@@ -1,6 +1,6 @@
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { ReactNode } from "react"; // Correctly import ReactNode
 import Head from "next/head";
 import { Press_Start_2P } from "next/font/google";
 import "../../styles/globals.css"; // Ensure the SASS file is imported
@@ -10,19 +10,7 @@ const pressStart2P = Press_Start_2P({
   subsets: ["latin"]
 });
 
-// Define the RootLayoutProps type at the top
-type RootLayoutProps = {
-  children: React.ReactNode;
-  headerProps?: {
-    HImage?: string;
-    Heading?: string;
-  };
-};
-
-// Correctly export the default function as a named function
-export default function RootLayout({ children, headerProps }: RootLayoutProps) {
-  const { HImage = "", Heading = "" } = headerProps || {};
-
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={pressStart2P.className}>
       <Head>
@@ -30,7 +18,6 @@ export default function RootLayout({ children, headerProps }: RootLayoutProps) {
       </Head>
       <body>
         <Navigation />
-        <Header HImage={HImage} Heading={Heading} />
         {children}
         <Footer />
       </body>
