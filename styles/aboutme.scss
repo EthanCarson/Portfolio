@@ -2,14 +2,16 @@
 @import "variables";
 #AboutMe {
     @include flex-basic;
+    display: flex; // Ensure the container is using flexbox
     flex-wrap: wrap;
     header {
-        min-width: 100%;
+        min-width: 100%; // You might want to adjust or remove this
     }
     section {
-        flex: 2 1 auto;
+        flex: 2 1 60%; // Ensure it's flexible but takes up 60% of the space
         div {
             @include flex-center;
+            padding: $SpaceLG;
             img {
                 flex: 1 1 auto;
             }
@@ -19,7 +21,7 @@
         }
     }
     aside {
-        flex: 1 1 auto;
+        flex: 1 1 35%; // This takes up the remaining 35% space
         background-color: $PGreen;
         border-radius: $SpaceMD;
         box-shadow: 0px 6px 8px -2px $PDGreenS;

@@ -12,11 +12,37 @@ type ImageData = {
 
 // Sample data for a single gallery
 const gallery: ImageData[] = [
-  { id: "1", src: "/img/image1.jpg", alt: "Image 1", caption: "Caption 1" },
-  { id: "2", src: "/img/image2.jpg", alt: "Image 2", caption: "Caption 2" },
-  { id: "3", src: "/img/image3.jpg", alt: "Image 3", caption: "Caption 3" },
-  { id: "4", src: "/img/image4.jpg", alt: "Image 4", caption: "Caption 4" },
-  { id: "5", src: "/img/image5.jpg", alt: "Image 5", caption: "Caption 5" }
+  {
+    id: "1",
+    src: "/img/nhs.jpg",
+    alt: "Candle",
+    caption: "Enetered into local National Honors Society"
+  },
+  {
+    id: "2",
+    src: "/img/everyday.jpg",
+    alt: "Hero",
+    caption: "Won the EveryDay Heroes Award from First Heritage"
+  },
+  {
+    id: "3",
+    src: "/img/musical.jpg",
+    alt: "Musical",
+    caption:
+      "Preformed lead roles in The Wizard of Oz, the Musical and A Christmas Story: The Musical"
+  },
+  {
+    id: "4",
+    src: "/img/allcounty.jpg",
+    alt: "Choir",
+    caption: "Part of All-County Band and Choir Throughout High-School"
+  },
+  {
+    id: "5",
+    src: "/img/top10.jpg",
+    alt: "Rockstar",
+    caption: "Top 10 of Class (#3)"
+  }
 ];
 
 const Accomplish: React.FC = () => {

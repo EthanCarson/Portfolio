@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Image from "next/image";
 import CategorySection from "../components/CategorySection";
+import "../../../styles/projectshow.scss";
 export default function Projects() {
   return (
     <div id="Projects">
@@ -11,18 +12,22 @@ export default function Projects() {
           <Image
             src="/img/webdev.jpg"
             alt="Web Development"
-            width={378}
-            height={378}
+            width={150}
+            height={150}
           />
           <Image
             src="/img/music.jpg"
             alt="Musical Chorale"
-            width={378}
-            height={378}
+            width={150}
+            height={150}
           />
         </article>
         <article>
-          <p>Stuff</p>
+          <p>
+            I love spending my free time diving into projects. I am also
+            involved in plenty of school projects as I journey through my degree
+            program. This page serves as a showcase of those amazing projects!
+          </p>
         </article>
       </section>
       <section className="secondary">
