@@ -1,10 +1,10 @@
 // Ensure the file is in the correct directory: /app/projects/CloudTileset/page.js
 import Header from "@/app/components/Header"; // Make sure Header component exists at this path
-import "../../../../styles/project.css"
+import "../../../../styles/project.css";
 export default function Project() {
   return (
     <div id="Project">
-      <Header HImage="/img/aboutheader.jpg" Heading="About Me:" />
+      <Header HImage="/img/workshopheader.png" Heading="Workshop Database!" />
 
       <p>
         One of the Labs for my Computer Sciences Portal involved making a

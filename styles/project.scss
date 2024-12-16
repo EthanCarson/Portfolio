@@ -20,8 +20,10 @@
     }
     .legal {
         padding: $SpaceMD;
+        text-align: center;
     }
     iframe {
         min-width: 100%;
+        min-height: 600px;
     }
 }

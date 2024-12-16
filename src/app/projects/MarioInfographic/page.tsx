@@ -5,7 +5,10 @@ import "../../../../styles/project.css";
 export default function Project() {
   return (
     <div id="Project">
-      <Header HImage="/img/aboutheader.jpg" Heading="About Me:" />
+      <Header
+        HImage="/img/marinfographicheader.png"
+        Heading="Mario Infographic"
+      />
 
       <p>
         For my Computer-Sciences Portal Class at FLCC, I was tasked with
@@ -26,7 +29,7 @@ export default function Project() {
         />
         <div className="legal">
           <em>
-            Super Mario&trade and Super Mario Bros&trade; are also property of
+            Super Mario&trade; and Super Mario Bros&trade; are also property of
             Nintendo. All rights go to their respective owners.
           </em>
         </div>

@@ -16,7 +16,9 @@
 }
 #Project .legal {
   padding: 0.6rem;
+  text-align: center;
 }
 #Project iframe {
   min-width: 100%;
+  min-height: 600px;
 }/*# sourceMappingURL=project.css.map */
