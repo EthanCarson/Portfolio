@@ -62,7 +62,10 @@ const Accomplish: React.FC = () => {
         <motion.div
           key={image.id}
           onClick={() => handleImageClick(image.id)}
-          style={{ cursor: "pointer", marginBottom: "10px" }}
+          style={{
+            cursor: "pointer",
+            marginBottom: "10px"
+          }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}

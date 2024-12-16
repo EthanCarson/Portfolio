@@ -1,29 +1,69 @@
 @import "functions";
 @import "variables";
+
 #AboutMe {
     @include flex-basic;
     display: flex; // Ensure the container is using flexbox
     flex-wrap: wrap;
+
     header {
-        min-width: 100%; // You might want to adjust or remove this
+        min-width: 100%; // Adjust or remove as needed for layout
     }
+
     section {
-        flex: 2 1 60%; // Ensure it's flexible but takes up 60% of the space
-        div {
+        flex: 2 1 60%; // Takes up 60% of the space
+        display: flex;
+        flex-direction: column;
+
+        > div {
             @include flex-center;
             padding: $SpaceLG;
+
             img {
-                flex: 1 1 auto;
+                flex: 1 1 auto; // Ensure the image scales properly
             }
+
             p {
-                flex: 2 1 auto;
+                flex: 2 1 auto; // Ensure the paragraph scales properly
             }
         }
     }
+
     aside {
-        flex: 1 1 35%; // This takes up the remaining 35% space
+        flex: 1 1 35%; // Takes up 35% of the space
         background-color: $PGreen;
         border-radius: $SpaceMD;
         box-shadow: 0px 6px 8px -2px $PDGreenS;
+
+        // Ensures same height as the adjacent section
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1 {
+            padding-top: $SpaceLG;
+        }
+        // Resets styles for the container
+        .image-container {
+            margin: 0;
+            padding: 0; // Reset padding to ensure no inherited values
+        }
+
+        // Adjusts layout for child images
+        div {
+            display: flex;
+            flex-direction: column; // Ensures images stack vertically
+
+            img {
+                flex: 1 1 100%; // Ensures each image takes up the full row width
+                max-width: 100%; // Prevents images from exceeding their container
+                height: auto; // Maintains aspect ratio
+                object-fit: cover; // Ensures a clean fit if needed
+            }
+        }
+
+        button {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
