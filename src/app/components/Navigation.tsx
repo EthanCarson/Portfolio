@@ -17,7 +17,7 @@ export default function Navigation() {
     <nav>
       <ul>
         <li>
-          <img src="#" alt="Logo" />
+          <img src="/navlogo.svg" alt="Logo" />
         </li>
         {navLinks.map((link) => (
           <li key={link.href}>

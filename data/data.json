@@ -6,16 +6,81 @@
         "HCaption": "Made a Corning Travelsite",
         "SCaption": "A Travelsite for a local town!",
         "ImgAlt": "Corning Travelsite",
-        "Link": "/projects/CorningTravelSite"
+        "Link": "https://ecarson2.csc.flcc.cloud/csc162/build/index.html",
+        "Header": "/img/corningheader.jpg",
+        "Head1": "Travelsite for Corning, NY!"
+      },
+      "CSS Showcase": {
+        "CardImage": "/img/css.png",
+        "HCaption": "Made a webpage showcasing CSS",
+        "SCaption": "A full CSS showcase with pixel art!",
+        "ImgAlt": "Pixel Art Tree in Fall",
+        "Link": "/projects/Stylish/index.html",
+        "Header": "/img/cssheader.png"
       }
     },
-    "PixelArt": {
+    "Pixel Art": {
       "CloudTileset": {
         "CardImage": "/img/Clouds-2.jpg",
         "HCaption": "Created a Mario World Cloud Tileset",
         "SCaption": "A passionate cloud tileset for one of my favorite games!",
         "ImgAlt": "Super Mario World Cloud Tileset",
-        "Link": "/projects/CloudTileset"
+        "Link": "/projects/CloudTileset",
+        "Header": "/img/Clouds-1.jpg",
+        "Head1": "Custom Cloud Tileset! (Based On Super Mario World's Map)",
+        "PageH1": "What's This?",
+        "PageDesc": "This is a pixel art tileset in the same style as Super Mario World, more specifically the map of said game. Aside from the background of the Star World, Super Mario World doesn't have any cloudy areas on the map. A personal project of mine needed said cloudy graphics, and I got sick of making up new graphics every time. And so, I decided to make my own definitive tileset for this purpose, and posted my results to SMW Central, a community of online SMW fans who have taken the game to a whole new level.",
+        "Secondary": {
+          "PageH1": "Image Showcase!",
+          "Img1": "/img/image.png",
+          "Img2": "/img/image (1).png",
+          "Img3": "/img/image (2).png",
+          "Img4": "/img/imagefix.png",
+          "Legal Notice": "For legal purposes, no pirated ROMS are distributed here or on SMWCentral. For more information, check out <a href=\"https://www.smwcentral.net/?p=cms&page=1219789-legal-information\">this page</a>. While the tileset was made by me, extra graphics and characters are property of Nintendo. Super Mario&trade and Super Mario World&trade; are also property of Nintendo. All rights go to their respective owners."
+        }
+      }
+    },
+    "College Projects": {
+      "Super Mario Bros Infographic": {
+        "CardImage": "/img/marinfographic.png",
+        "HCaption": "Made a Super Mario Bros&trade infographic",
+        "SCaption": "A Themed infographic for the original Super Mario Bros&trade!",
+        "ImgAlt": "An Infographic with a Retro Esthetic",
+        "Link": "/projects/MarioInfographic",
+        "Header": "/img/marinfographicheader.png",
+        "Head1": "Themed Infographic for Super Mario Bros&trade!",
+        "PageDesc": "For my Computer-Sciences Portal Class at FLCC, I was tasked with creating a Infographic for an important step in technology, and feature it on this page. I decided to make an infographic for the Original Super Mario Bros&trade. It goes without saying that this game pratically revitialized the gaming industry in America, and begun arguably the most famous video game franchise. Working in Canva, I took the extra time to base the style of this infographic loosely on the original game, brining that extra charm!",
+        "Img1": "/img/csmarinfographic.png",
+        "LegalNotice": "Super Mario&trade and Super Mario Bros&trade; are also property of Nintendo. All rights go to their respective owners."
+      },
+      "E-Shoes": {
+        "CardImage": "/img/eshoes.png",
+        "HCaption": "Wireframe project for E-Shoes",
+        "SCaption": "A Wireframe website for the fictional E-Shoes!",
+        "ImgAlt": "A Webpage Wireframe",
+        "Link": "https://www.figma.com/proto/7Dxtpzfajzz6otCVWRhbD5/EShoes-Ethan?node-id=23-1789&t=U8NJJHTb1P4boMf6-1&starting-point-node-id=8%3A123",
+        "Header": "/img/eshoesheader.png",
+        "Head1": "A Wireframe Website for...E-Shoes?"
+      },
+      "Workshop": {
+        "CardImage": "/img/workshop.png",
+        "HCaption": "A 'workshop' database with forms",
+        "SCaption": "A 'workshop' database with easy access forms for data!",
+        "ImgAlt": "A Set of Cards From a Databaase",
+        "Link": "/projects/Workshop",
+        "Header": "/img/workshopheader.png",
+        "Head1": "An Easily Expandable Database!",
+        "PageDesc": "One of the Labs for my Computer Sciences Portal involved making a database in Airtable, and publishing the forms that allow data to be added to the database from an external source. I thought this project was cool, so I posted it here! As A Bonus, you can fill out the form and mark your data not only in the database, but on the site! This work is entirely fictional, and nothing is done with this data, so feel free to get creative! For the enjoyment of all users, please do not post anything innapropiate. Doing so will tarnish user experience and may lead to the removal of this cool project!",
+        "ExtraHTML": "<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrgOh1g7l3TFTpmH\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrpaUUhOUNftOKyd?viewControls=on\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrqi4ZCImgrLzfr5\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shrZ4ZLubZJC0u1ye?viewControls=on\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>\n<iframe class=\\\"airtable-embed\\\" src=\\\"https://airtable.com/embed/app93vkhmr7a7NBX6/shraPVTZqd1a5Dzso\\\" frameborder=\\\"0\\\" onmousewheel=\\\"\\\" width=\\\"100%\\\" height=\\\"533\\\" style=\\\"background: transparent; border: 1px solid #ccc\\\"></iframe>"
+      },
+      "Messy Problem": {
+        "CardImage": "/img/messy.png",
+        "HCaption": "Made a Document for A Messy Problem",
+        "SCaption": "Problem-solving pseudocode for a sticky situation!",
+        "ImgAlt": "Messy Problems Clip",
+        "Link": "https://docs.google.com/document/d/1QYnJPmPxXjBjcMHpyFHebO99AkWzbfcuF4KGFYOMxG8/edit?usp=sharing",
+        "Header": "/img/messyheader.png",
+        "Head1": "A Tricky Problem Solved by Pseudocode!"
       }
     }
   },
@@ -28,9 +93,30 @@
   },
   "Interests": {
     "Golf": {
-      "image": "Something",
+      "image": "/img/golf.jpg",
       "ImgAlt": "Golfball",
-      "Description": "I like Golf Ok"
+      "Description": "I started golfing in the 7th grade (Though I suppose I’d likely played the sport aplenty beforehand). Although I always struggled to learn, I kept golfing. I enjoyed the company of my coach and the close-knit team that formed every year. I also enjoyed the views on the course and the hobby in general. I played on my school team all the way through my senior year. To this day, I still try to get on the course for a quick round."
+    },
+    "Pixel": {
+      "image": "/img/pixel.jpg",
+      "ImgAlt": "Pixel Art",
+      "Description": "I have experimented with pixel art as a medium for a very long time. I’ve kept records from works of mine as early as 6th grade. My skills in this genre have grown exponentially since then. I love working under limitations and making my art appear as if it comes from a retro console. I am really impressed with my skills as they are today."
+    },
+    "Retro": {
+      "image": "/img/retro.jpg",
+      "ImgAlt": "Retro Gaming Controllers",
+      "Description": "I have always had an interest for retro gaming (Especially for Nintendo consoles), but I couldn’t collect for the longest time because I simply didn’t have my own money. Now that I make my own living, I have a proud collection of NES and SNES games sitting on my shelf. I also maintain my interest in my first ever console, the Nintendo Wii. My Wii is still with me in my dorm, stacked with tons of cool extra features and improvements I’ve made throughout the years."
+    },
+
+    "BoardGames": {
+      "imgae": "/img/boardgames.jpg",
+      "ImgAlt": "Dice on a Table",
+      "Description": "Every now and then, it can be so awarding to sit down with family and friends and play a great board game. While I’m not the most hardcore fan out there, I love learning and playing tons of tabletop games. I have always fought for a full Dungeons and Dragons campaign (though never played through one). I also enjoy the more complex board games, and I can admire when a board game comes with quality pieces."
+    },
+    "Music": {
+      "image": "UhOh",
+      "ImgAlt": "Music",
+      "Description": "Oopie"
     }
   }
 }
