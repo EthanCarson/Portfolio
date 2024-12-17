@@ -38,6 +38,7 @@ export default function Project() {
           width={350}
           height={350}
         />
+        
         <div className="legal">
           <em>
             For legal purposes, no pirated ROMS are distributed here or on
@@ -51,6 +52,9 @@ export default function Project() {
             respective owners.
           </em>
         </div>
+      </div>
+      <div id="Reflect">
+       It is so nice to be able to so off some personal work! This tileset came out really well, and accomplished all of my goals! Biggest learning lesson here was properly submitting graphics for this community.
       </div>
     </div>
   );

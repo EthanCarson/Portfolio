@@ -34,6 +34,9 @@ export default function Project() {
           </em>
         </div>
       </div>
+      <div id="Reflect">
+      I feel like this infographic did a good job. I did not have as much time to make this as I wished, but the final design definitely harpors back to the original game. I just wish I had more data and more planning.
+      </div>
     </div>
   );
 }

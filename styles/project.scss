@@ -18,6 +18,16 @@
         margin-right: auto;
         padding: $SpaceMD;
     }
+    a {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: $PBlue;
+        :hover {
+            color: $PBlueS;
+        }
+    }
     .legal {
         padding: $SpaceMD;
         text-align: center;
@@ -25,5 +35,10 @@
     iframe {
         min-width: 100%;
         min-height: 600px;
+    }
+    #Reflect {
+        background-color: $PGreen;
+        text-align: center;
+        padding: $SpaceMD;
     }
 }

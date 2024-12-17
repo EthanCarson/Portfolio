@@ -7,7 +7,7 @@
         "HCaption": "Made a Corning Travelsite",
         "SCaption": "A Travelsite for a local town!",
         "ImgAlt": "Corning Travelsite",
-        "Link": "https://ecarson2.csc.flcc.cloud/csc162/build/index.html",
+        "Link": "projects/corningtravelsite",
         "Header": "/img/corningheader.jpg",
         "Head1": "Travelsite for Corning, NY!"
       },
@@ -17,7 +17,7 @@
         "HCaption": "Made a webpage showcasing CSS",
         "SCaption": "A full CSS showcase with pixel art!",
         "ImgAlt": "Pixel Art Tree in Fall",
-        "Link": "https://ecarson2.csc.flcc.cloud/csc162/Stylish/index.html",
+        "Link": "projects/cssshowcase",
         "Header": "/img/cssheader.png"
       }
     },
@@ -63,7 +63,7 @@
         "HCaption": "Wireframe project for E-Shoes",
         "SCaption": "A Wireframe website for the fictional E-Shoes!",
         "ImgAlt": "A Webpage Wireframe",
-        "Link": "https://www.figma.com/proto/7Dxtpzfajzz6otCVWRhbD5/EShoes-Ethan?node-id=23-1789&t=U8NJJHTb1P4boMf6-1&starting-point-node-id=8%3A123",
+        "Link": "projects/e-shoes",
         "Header": "/img/eshoesheader.png",
         "Head1": "A Wireframe Website for...E-Shoes?"
       },
@@ -85,7 +85,7 @@
         "HCaption": "Made a Document for A Messy Problem",
         "SCaption": "Problem-solving pseudocode for a sticky situation!",
         "ImgAlt": "Messy Problems Clip",
-        "Link": "https://docs.google.com/document/d/1QYnJPmPxXjBjcMHpyFHebO99AkWzbfcuF4KGFYOMxG8/edit?usp=sharing",
+        "Link": "projects/messyproblem",
         "Header": "/img/messyheader.png",
         "Head1": "A Tricky Problem Solved by Pseudocode!"
       }

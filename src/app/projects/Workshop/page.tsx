@@ -28,6 +28,11 @@ export default function Project() {
 
         <iframe src="https://airtable.com/embed/app93vkhmr7a7NBX6/shraPVTZqd1a5Dzso"></iframe>
       </div>
+      <div id="Reflect">
+        This was a quick and fun project to do! I find databases fascinating,
+        yet I rarely find an opportunity to work with one. I think the final
+        result is pretty cool! I just wish the iframes could load easier...
+      </div>
     </div>
   );
 }
