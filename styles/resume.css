@@ -1,0 +1,55 @@
+#Resume {
+  text-align: center;
+}
+#Resume .orange {
+  color: orange;
+}
+#Resume .purple {
+  color: rebeccapurple;
+}
+#Resume .blue {
+  color: blue;
+}
+#Resume .green {
+  color: green;
+}
+#Resume .lblue {
+  color: rgb(34, 134, 249);
+}
+#Resume .yellow {
+  color: rgb(192, 167, 4);
+}
+#Resume #ResContent {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Resume #ResContent img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Resume #ResContent #overview {
+  padding: 0.6rem;
+}
+#Resume #ResContent #programs {
+  font-size: x-large;
+}
+#Resume #ResContent #exampleHTML {
+  display: block;
+  min-width: 100%;
+}
+#Resume #ResContent #art p {
+  padding-block-end: 1.2rem;
+}
+
+#ResTerm {
+  background-color: rgb(19, 19, 19);
+  color: green;
+}
+#ResTerm input {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}/*# sourceMappingURL=resume.css.map */

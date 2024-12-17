@@ -1,0 +1,59 @@
+@import "functions";
+@import "variables";
+#Resume {
+    .orange {
+        color: orange;
+    }
+    .purple {
+        color: rebeccapurple;
+    }
+    .blue {
+        color: blue;
+    }
+    .green {
+        color: green;
+    }
+    .lblue {
+        color: rgb(34, 134, 249);
+    }
+    .yellow {
+        color: rgb(192, 167, 4);
+    }
+
+    text-align: center;
+    #ResContent {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #overview {
+            padding: $SpaceMD;
+        }
+        #programs {
+            font-size: x-large;
+        }
+        #exampleHTML {
+            display: block;
+            min-width: 100%;
+        }
+        #art {
+            p {
+                padding-block-end: $SpaceLG;
+            }
+        }
+    }
+}
+#ResTerm {
+    background-color: rgb(19, 19, 19);
+    color: green;
+    input {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
