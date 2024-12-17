@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import "../../../../styles/resume.css";
+
+
 const Resume: React.FC = () => {
   // List of fake URLs (use real URLs in production)
   const pageUrls = [
@@ -36,6 +38,7 @@ const Resume: React.FC = () => {
           he demonstrates a blend of technical, academic, and artistic
           excellence.
         </p>
+       
       </div>
     ),
     programs: (

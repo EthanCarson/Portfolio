@@ -22,6 +22,12 @@
   border-radius: 0.6rem;
   padding-left: 0.6rem;
 }
+#Contact aside a {
+  color: hsl(223, 44%, 45%);
+}
+#Contact aside a :hover {
+  color: rgba(50, 21, 93, 0.518);
+}
 #Contact section {
   flex: 2 1 60%;
 }

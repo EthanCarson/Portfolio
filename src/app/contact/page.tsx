@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Image from "next/image";
 import "../../../styles/cotnact.css";
+import Link from "next/link";
 export default function Contact() {
   return (
     <div id="Contact">
@@ -20,6 +21,9 @@ export default function Contact() {
           he demonstrates a blend of technical, academic, and artistic
           excellence.
         </p>
+        <Link href={"/contact/resume"}>
+          <p>Find out more here!</p>
+        </Link>
       </aside>
       <section>
         <p>
