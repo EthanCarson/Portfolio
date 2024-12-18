@@ -33,7 +33,7 @@
 #Resume #ResContent #overview {
   padding: 0.6rem;
 }
-#Resume #ResContent #programs {
+#Resume #ResContent #expereience {
   font-size: x-large;
 }
 #Resume #ResContent #exampleHTML {
@@ -47,6 +47,7 @@
 #ResTerm {
   background-color: rgb(19, 19, 19);
   color: green;
+  padding: 0.6rem;
 }
 #ResTerm input {
   margin-left: auto;

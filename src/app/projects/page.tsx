@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Image from "next/image";
 import CategorySection from "../components/CategorySection";
+
 import "../../../styles/projectshow.css";
 export default function Projects() {
   return (

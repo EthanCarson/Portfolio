@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import "../../../../styles/resume.css";
 
-
 const Resume: React.FC = () => {
-  // List of fake URLs (use real URLs in production)
   const pageUrls = [
     "https://ecarson2.csc.flcc.cloud/csc162/",
     "https://ecarson2.csc.flcc.cloud/csc162/Portfolio/index.html",
@@ -38,26 +36,75 @@ const Resume: React.FC = () => {
           he demonstrates a blend of technical, academic, and artistic
           excellence.
         </p>
-       
       </div>
     ),
-    programs: (
-      <div id="programs">
-        <ul>
-          <li className="orange">HTML5: &#9635;&#9635;&#9635;&#9635;&#9635;</li>
-          <li className="purple">CSS: &#9635;&#9635;&#9635;&#9635;&#9635;</li>
-          <li className="yellow">
+    experience: (
+      <div id="experience">
+        <dl>
+          <dd className="orange">
+            HTML5: &#9635;&#9635;&#9635;&#9635;&#9635;
+            <dt>
+              Developed multiple web pages using HTML, demonstrating a strong
+              understanding of core HTML components and best practices for page
+              structure. Proficient in enhancing HTML functionality through the
+              integration of additional packages and tools.
+            </dt>
+          </dd>
+          <dd className="purple">
+            CSS: &#9635;&#9635;&#9635;&#9635;&#9635;
+            <dt>
+              Proficient in applying inline styles, page styles, and CSS, with a
+              clear understanding of when to use each approach. Skilled in
+              utilizing primary styling techniques and more advanced CSS rules.
+              Experienced in extending CSS with frameworks, including SASS for
+              portfolio development and TailwindCSS for a travel site.
+            </dt>
+          </dd>
+          <dd className="yellow">
             JavaScript: &#9635;&#9635;&#9635;&#9633;&#9633;
-          </li>
-          <li>Next.js: &#9635;&#9635;&#9633;&#9633;&#9633;</li>
-          <li className="green">
+            <dt>
+              Skilled in understanding core object structures and DOM
+              manipulation. Experienced in creating functions and executing them
+              within HTML pages. Capable of expanding functionality using
+              frameworks like React.
+            </dt>
+          </dd>
+          <dd>
+            Next.js: &#9635;&#9635;&#9633;&#9633;&#9633;
+            <dt>
+              Developed a portfolio page using Next.js, with a strong grasp of
+              its core features, including routing and deployment. Currently
+              working on an AI-based website for a client, leveraging Next.js
+              for the project.
+            </dt>
+          </dd>
+          <dd className="green">
             Node.js: &#9635;&#9635;&#9635;&#9635;&#9633;
-          </li>
-          <li className="blue">React: &#9635;&#9635;&#9635;&#9633;&#9633;</li>
-          <li className="lblue">
-            Tailwind CSS: &#9635;&#9635;&#9635;&#9635;&#9633;
-          </li>
-        </ul>
+            <dt>
+              Proficient in managing packages and dependencies, with a solid
+              understanding of Node.js fundamentals. Regularly use Node.js in
+              web development projects.
+            </dt>
+          </dd>
+          <dd className="blue">
+            React: &#9635;&#9635;&#9635;&#9633;&#9633;
+            <dt>
+              Experienced in using React with both Vite and Next.js. Strong
+              understanding of component fundamentals, with the ability to
+              effectively implement primary features for dynamic components.
+              Currently developing an AI-based website for a client, utilizing
+              React components.
+            </dt>
+          </dd>
+          <dd className="lblue">
+            TailwindCSS: &#9635;&#9635;&#9635;&#9635;&#9633;
+            <dt>
+              Proficient in using TailwindCSS for rapid prototyping and design
+              work. Able to identify and apply best practices for Tailwind, and
+              seamlessly integrate it with other CSS methodologies.
+            </dt>
+          </dd>
+        </dl>
       </div>
     ),
     // Random page loading using iframe from a list of URLs
@@ -98,7 +145,7 @@ const Resume: React.FC = () => {
 
   // State to hold the content that will be displayed
   const [content, setContent] = useState<React.ReactNode>(
-    'Type a command below (e.g., "overview", "programs", "exampleHTML", "art", "ai")'
+    'Type a command below (e.g., "overview", "experience", "exampleHTML", "art", "ai")'
   );
 
   // State to hold the user input
@@ -114,7 +161,7 @@ const Resume: React.FC = () => {
       setContent(contentMapping[input]);
     } else {
       setContent(
-        'Type a valid command like "overview", "programs", "exampleHTML", "art", or "ai".'
+        'Type a valid command like "overview", "experience", "exampleHTML", "art", or "ai".'
       );
     }
   };
@@ -149,7 +196,7 @@ const Resume: React.FC = () => {
           <span>
             &quot;<span className="lblue"> /&gt;</span>
             <span className="blue">
-              Valid values are overview, programs, exampleHTML, art, and ai.
+              Valid values are overview, experience, exampleHTML, art, and ai.
               Have fun!
             </span>
           </span>

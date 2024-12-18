@@ -24,6 +24,7 @@
 }
 #Contact aside a {
   color: hsl(223, 44%, 45%);
+  text-align: center;
 }
 #Contact aside a :hover {
   color: rgba(50, 21, 93, 0.518);

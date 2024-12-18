@@ -63,12 +63,21 @@ export default function Navbar() {
           </ul>
         </li>
 
-        <li>
+        <li id="ProjectNav">
           {pathname === "/contact" ? (
             "Contact" // Display as text only for current page
           ) : (
             <Link href="/contact">Contact</Link>
           )}
+          <ul>
+            <li>
+              {pathname === "/contact/resume" ? (
+                "Resume" // Display as text only for current page
+              ) : (
+                <Link href="/contact/resume">Resume</Link>
+              )}
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
