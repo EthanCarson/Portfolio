@@ -11,17 +11,15 @@ Ethan Carson
 html {
     background: url("/img/htmlb.png");
     display: block;
-    overflow: scroll;
+    overflow: auto; // Adjusted to auto
 
     body {
         margin-left: auto;
         margin-right: auto;
         max-width: 1200px;
         min-width: 400px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
+
+        padding-top: 60px; // Matches the height of the navigation
 
         background-color: $PBg;
         h1 {
@@ -53,6 +51,12 @@ html {
         }
         //Navitaion Styles
         nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 60px; // Ensure the height matches the body's padding
+            z-index: 1000;
             box-shadow: 0px 6px 8px -2px $PBlueS;
 
             // Apply styles only to the first ul element within the nav

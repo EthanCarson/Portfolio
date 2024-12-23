@@ -105,12 +105,14 @@ a:focus {
 html {
   background: url("/img/htmlb.png");
   display: block;
+  overflow: auto;
 }
 html body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
   min-width: 400px;
+  padding-top: 60px;
   background-color: hsl(176, 53%, 80%);
 }
 html body h1 {
@@ -139,6 +141,12 @@ html body h3 {
   font-style: normal;
 }
 html body nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 1000;
   box-shadow: 0px 6px 8px -2px rgba(14, 30, 114, 0.417);
 }
 html body nav ul:first-of-type {
