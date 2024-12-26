@@ -1,10 +1,15 @@
-"use client";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import { ReactNode } from "react"; // Correctly import ReactNode
 import Head from "next/head";
 import { Press_Start_2P } from "next/font/google";
 import "../../styles/globals.css"; // Ensure the SASS file is imported
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ethan Carson",
+  description: "Ethan Carson's Portfolio"
+};
 
 const pressStart2P = Press_Start_2P({
   weight: ["400"],
