@@ -148,6 +148,7 @@ html body header h1 {
 }
 html body p {
   text-indent: 1.2rem;
+  word-wrap: break-word;
 }
 html body h1,
 html body h2,
@@ -274,7 +275,19 @@ html body footer #Email {
   min-width: 500px;
   display: flex;
   align-content: center;
+  justify-content: center;
   padding-left: 0.6rem;
+}
+@media only screen and (max-width: 500px) {
+  html body footer #Email {
+    min-width: 0px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  html body footer #Email {
+    justify-content: center;
+  }
 }
 html body footer #Icons {
   display: flex;

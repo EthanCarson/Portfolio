@@ -32,6 +32,12 @@
   text-align: center;
   padding: 0.6rem;
 }
+@media only screen and (max-width: 700px) {
+  #Home #Intro article:nth-of-type(2) {
+    min-width: 0px;
+    width: 100%;
+  }
+}
 #Home .secondary h1 {
   padding: 0.6rem;
 }
