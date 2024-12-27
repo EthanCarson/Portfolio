@@ -175,6 +175,41 @@ html body nav ul:first-of-type {
   background-color: hsl(205, 70%, 46%);
   /* Optional: Add styles for the links */
 }
+@media only screen and (max-width: 700px) {
+  html body nav ul:first-of-type {
+    flex-wrap: wrap;
+  }
+  html body nav ul:first-of-type .mobile {
+    display: none;
+    width: 100vw;
+  }
+  html body nav ul:first-of-type .mobile li {
+    height: 80px;
+  }
+  html body nav ul:first-of-type li:first-child {
+    flex: 2 1 auto;
+  }
+}
+html body nav ul:first-of-type .sandwhich {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  html body nav ul:first-of-type .sandwhich {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    flex: 1 1 auto;
+    background-color: hsl(205, 70%, 46%);
+    color: white;
+  }
+  html body nav ul:first-of-type .sandwhich img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+html body nav ul:first-of-type .sandwhich a {
+  display: block;
+}
 html body nav ul:first-of-type a:hover {
   background-color: rgba(14, 30, 114, 0.417);
 }

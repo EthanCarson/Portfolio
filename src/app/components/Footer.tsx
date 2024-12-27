@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <footer>
       <div id="Email">
-        Email:
+        Email: &#32; {/*I tried*/}
         <a href="mailto:digitalec414@outlook.com"> digitalec414@outlook.com</a>
       </div>
 
