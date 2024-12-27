@@ -16,6 +16,9 @@
   align-items: center;
   flex-wrap: wrap;
 }
+#Home #Intro img {
+  padding-top: 1.2rem;
+}
 #Home #Intro h1 {
   padding-bottom: 0.2rem;
   font-size: 30px;

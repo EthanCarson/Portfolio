@@ -14,6 +14,9 @@
     #Intro {
         @include flex-center;
         flex-wrap: wrap;
+        img {
+            padding-top: $SpaceLG;
+        }
         h1 {
             padding-bottom: $SpaceSM;
             font-size: $Heading1;
