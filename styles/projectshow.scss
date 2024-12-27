@@ -11,7 +11,7 @@
             @include flex-center;
             flex-wrap: wrap;
             img {
-                flex: 1 1 auto;
+                width: 416px;
                 padding: $SpaceGap;
             }
         }
@@ -25,28 +25,10 @@
             padding: $SpaceMD;
         }
         h2 {
+            padding-top: $SpaceLG;
+            padding: $SpaceMD;
             text-align: center;
-        }
-
-        .Card {
-            display: flex; // Use flexbox for the layout of image and text
-            flex-direction: column; // Stack image and text vertically
-            justify-content: center; // Center content vertically within .Card
-            align-items: center; // Center content horizontally within .Card
-
-            width: auto; // Let the Card be as wide as needed
-            max-width: 251px; // Optional: limit the Card's maximum width
-            box-sizing: border-box; // Ensure padding doesn't cause overflow
-            margin: 0 auto; // Horizontally center the Card on the page
-        }
-
-        a {
-            display: flex; // Treat anchor as a flex container
-            flex-direction: column; // Stack image and text vertically inside the anchor
-            justify-content: center; // Center items vertically
-            align-items: center; // Center items horizontally
-            width: auto; // Let it take up only as much space as the content
-            max-width: 100%; // Prevent the anchor from growing too large
+            font-size: $Heading2;
         }
 
         img {
@@ -56,8 +38,27 @@
         }
 
         div {
+            @include flex-basic;
             text-align: center; // Center the text inside the div
-            padding: $SpaceMD; // Optional: add padding around the text
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            .Card {
+                display: flex; // Use flexbox for the layout of image and text
+                justify-content: center;
+                align-items: baseline;
+                width: 320px;
+                height: 350px;
+            }
+
+            a {
+                display: flex; // Treat anchor as a flex container
+                flex-direction: column; // Stack image and text vertically inside the anchor
+                justify-content: center; // Center items vertically
+                align-items: center; // Center items horizontally
+                width: auto; // Let it take up only as much space as the content
+                max-width: 100%; // Prevent the anchor from growing too large
+            }
         }
     }
 }

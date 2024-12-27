@@ -9,7 +9,7 @@
   flex-wrap: wrap;
 }
 #Projects section:nth-of-type(1) article:nth-of-type(1) img {
-  flex: 1 1 auto;
+  width: 416px;
   padding: 5rem;
 }
 #Projects section:nth-of-type(1) p {
@@ -20,25 +20,10 @@
   padding: 0.6rem;
 }
 #Projects .secondary h2 {
+  padding-top: 1.2rem;
+  padding: 0.6rem;
   text-align: center;
-}
-#Projects .secondary .Card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  max-width: 251px;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-#Projects .secondary a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  max-width: 100%;
+  font-size: 24px;
 }
 #Projects .secondary img {
   max-width: 100%;
@@ -46,6 +31,28 @@
   margin-bottom: 0.6rem;
 }
 #Projects .secondary div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   text-align: center;
-  padding: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+#Projects .secondary div .Card {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 320px;
+  height: 350px;
+}
+#Projects .secondary div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
 }/*# sourceMappingURL=projectshow.css.map */
