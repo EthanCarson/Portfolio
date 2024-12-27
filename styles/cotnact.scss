@@ -16,13 +16,19 @@
         }
     }
     aside {
+        background-color: $PBlueS;
         flex: 1 1 35%; // This takes up the remaining 35% space
-
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         border-radius: $SpaceMD;
-        padding-left: $SpaceMD;
+        padding: $SpaceLG;
+        text-align: center;
         a {
             color: $PDBLue;
-            text-align: center;
+
             :hover {
                 color: $PDBlueS;
             }
@@ -38,7 +44,7 @@
             }
         }
         div.buttons {
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             flex-wrap: nowrap;

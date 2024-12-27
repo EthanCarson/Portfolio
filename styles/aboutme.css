@@ -28,6 +28,7 @@
 }
 #AboutMe section > div p {
   flex: 2 1 auto;
+  padding-left: 0.6rem;
 }
 #AboutMe aside {
   flex: 1 1 35%;
