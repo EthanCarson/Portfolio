@@ -20,9 +20,16 @@
 #Contact aside {
   background-color: rgba(14, 30, 114, 0.417);
   flex: 1 1 35%;
+  min-width: 300px;
   border-radius: 0.6rem;
   padding: 1.2rem;
   text-align: center;
+}
+@media only screen and (max-width: 300px) {
+  #Contact aside {
+    min-width: 0px;
+    width: 100%;
+  }
 }
 #Contact aside img {
   display: block;
