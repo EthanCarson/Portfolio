@@ -94,25 +94,7 @@ export default function Navbar() {
         </li>
       </ul>
 
-      <style jsx>{`
-        /* Mobile Menu */
-
-        .mobile.open {
-          display: block; /* Show when menu is open */
-        }
-
-        /* Hamburger Icon toggle on mobile */
-        .sandwhich {
-          cursor: pointer;
-        }
-
-        /* Show hamburger on mobile */
-        @media only screen and (max-width: 700px) {
-          .mobile.open {
-            display: block; /* Show when clicked */
-          }
-        }
-      `}</style>
+     
     </nav>
   );
 }

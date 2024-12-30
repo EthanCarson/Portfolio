@@ -84,6 +84,9 @@ html {
                             height: 80px;
                         }
                     }
+                    .mobile.open {
+                        display: flex; /* Show when clicked */
+                    }
 
                     li:first-child {
                         flex: 2 1 auto;
@@ -99,15 +102,15 @@ html {
                             margin-right: auto;
                             width: 30px;
                             height: 30px;
+                            margin-top: 15px;
+                            padding-right: 0px;
                         }
                         text-align: center;
                         font-size: larger;
                         flex: 1 1 auto;
                         background-color: $PBlue;
                         color: white;
-                    }
-                    a {
-                        display: block;
+                        cursor: pointer;
                     }
                 }
                 background-color: $PBlue;
@@ -143,8 +146,7 @@ html {
 
                     li {
                         position: relative; /* Necessary for positioning nested dropdowns */
-
-                        /* Nested dropdowns for WebNav, PixelNav, and ColNav */
+                        @include flex-center; /* Nested dropdowns for WebNav, PixelNav, and ColNav */
                         #WebNav,
                         #PixelNav,
                         #ColNav {

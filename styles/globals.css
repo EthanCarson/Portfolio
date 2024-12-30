@@ -186,6 +186,9 @@ html body nav ul:first-of-type {
   html body nav ul:first-of-type .mobile li {
     height: 80px;
   }
+  html body nav ul:first-of-type .mobile.open {
+    display: flex; /* Show when clicked */
+  }
   html body nav ul:first-of-type li:first-child {
     flex: 2 1 auto;
   }
@@ -201,16 +204,16 @@ html body nav ul:first-of-type .sandwhich {
     flex: 1 1 auto;
     background-color: hsl(205, 70%, 46%);
     color: white;
+    cursor: pointer;
   }
   html body nav ul:first-of-type .sandwhich img {
     margin-left: auto;
     margin-right: auto;
     width: 30px;
     height: 30px;
+    margin-top: 15px;
+    padding-right: 0px;
   }
-}
-html body nav ul:first-of-type .sandwhich a {
-  display: block;
 }
 html body nav ul:first-of-type a:hover {
   background-color: rgba(14, 30, 114, 0.417);
@@ -242,6 +245,9 @@ html body nav ul:first-of-type #ProjectNav:hover > ul {
 }
 html body nav ul:first-of-type #ProjectNav li {
   position: relative; /* Necessary for positioning nested dropdowns */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Nested dropdowns for WebNav, PixelNav, and ColNav */
   /* Show nested dropdowns when hovering over the parent li */
 }
