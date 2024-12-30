@@ -205,6 +205,8 @@ html body nav ul:first-of-type .sandwhich {
   html body nav ul:first-of-type .sandwhich img {
     margin-left: auto;
     margin-right: auto;
+    width: 30px;
+    height: 30px;
   }
 }
 html body nav ul:first-of-type .sandwhich a {
