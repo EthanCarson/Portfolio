@@ -4,7 +4,7 @@ import Accomplish from "../components/Accomplish";
 import "../../../styles/aboutme.css";
 export default function AboutMe() {
   return (
-    <div id="AboutMe">
+    <main id="AboutMe">
       <Header HImage="/img/aboutheader.jpg" Heading="About Me:" />
       <section>
         <h1>Interests:</h1>
@@ -13,12 +13,8 @@ export default function AboutMe() {
         <Interests>Retro</Interests>
         <Interests>BoardGames</Interests>
       </section>
-      <aside>
-        <h1>Accomplishments:</h1>
-        <section>
-          <Accomplish />
-        </section>
-      </aside>
-    </div>
+
+      <Accomplish />
+    </main>
   );
 }
