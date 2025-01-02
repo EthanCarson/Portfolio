@@ -34,8 +34,8 @@ export default function Home() {
       <section className="secondary">
         <h1>Personal Highlights:</h1>
         <div>
-          <Card isHomePage={true}>RochIG</Card>
-          <Card isHomePage={true}>CorningTravelSite</Card>
+          <Card isHomePage={true}>Highlights.RochIG</Card>
+          <Card isHomePage={true}>Projects.Websites.CorningTravelSite</Card>
         </div>
       </section>
     </div>

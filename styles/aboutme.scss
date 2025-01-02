@@ -50,6 +50,15 @@
             margin: 0;
             padding: 0; // Reset padding to ensure no inherited values
         }
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            padding: $SpaceMD;
+        }
+        p {
+            text-align: center;
+            padding: $SpaceSM;
+        }
 
         // Adjusts layout for child images
         div {

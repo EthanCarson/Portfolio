@@ -1,64 +1,73 @@
-import { Data } from "./DataTypes";
-import dataJson from "../../../data/data.json";
 import Image from "next/image";
 import Link from "next/link";
+import Fetcher from "./Fetcher";
+import { Project, Highlight } from "./DataTypes"; // Import types
 
-const data: Data = dataJson;
+/*
+This Component Creates a Card with an Image and Caption
+There are 2 possible Captions which can be set with the isHomePage attribute
+Component requires both Children and the isHomePage attribute
+
+Optimized 1/2/2025
+Ethan Carson
+Made with help from ChatGPT
+
+*/
 
 type CardProps = {
-  children: React.ReactNode;
+  children: string;
   isHomePage: boolean;
 };
 
 export default function Card({ children, isHomePage }: CardProps) {
-  const referenceName = typeof children === "string" ? children : "";
-
-  // Check if referenceName exists under Projects or Highlights
-  const cardData =
-    Object.values(data.Projects)
-      .map((category) => category[referenceName])
-      .find(Boolean) || data.Highlights[referenceName];
-
-  if (!cardData) {
-    console.error(`Card data not found for reference: ${referenceName}`);
-    return null;
-  }
-
-  const {
-    CardImage,
-    HCaption,
-    SCaption,
-    Link: link = "#",
-    ImgAlt = "Card image"
-  } = cardData;
-
-  const isProject = referenceName in data.Projects;
-
-  const caption = isHomePage && HCaption ? HCaption : SCaption;
-
-  const renderCardContent = (
-    <>
-      <Image
-        src={CardImage}
-        alt={ImgAlt}
-        width={251}
-        height={251}
-        layout="intrinsic"
-      />
-      <div>
-        {isHomePage && isProject && <em>Project: </em>}
-        {caption}
-      </div>
-    </>
-  );
-
+  const referenceName = children;
   return (
-    <div className="Card">
-      {link !== "#" ? (
-        <Link href={link}>{renderCardContent}</Link>
-      ) : (
-        renderCardContent
-      )}
-    </div>
+    <Fetcher data={referenceName}>
+      {(fetchedData: Project | Highlight) => {
+        // Explicitly specify the type
+        if (!fetchedData) {
+          console.error(
+            `Fetched data not found for reference: ${referenceName}`
+          );
+          return null;
+        }
+
+        const {
+          CardImage,
+          HCaption,
+          SCaption,
+          Link: link = "#",
+          ImgAlt = "Card image"
+        } = fetchedData;
+
+        const caption = isHomePage && HCaption ? HCaption : SCaption;
+
+        const renderCardContent = (
+          <>
+            <Image
+              src={CardImage}
+              alt={ImgAlt}
+              width={251}
+              height={251}
+              layout="intrinsic"
+            />
+            <div>
+              {caption && isHomePage && <em>Project: </em>}
+              {caption}
+            </div>
+          </>
+        );
+
+        return (
+          <div className="Card">
+            {link !== "#" ? (
+              <Link href={link}>{renderCardContent}</Link>
+            ) : (
+              renderCardContent
+            )}
+          </div>
+        );
+      }}
+    </Fetcher>
   );
 }

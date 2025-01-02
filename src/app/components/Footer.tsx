@@ -9,13 +9,21 @@ export default function Footer() {
 
       <div id="Icons">
         <div id="Logo">
-          <img src="/logo.svg" width={100} alt="Logo" />
+          <Image src="/logo.svg" width={100} height={100} alt="Logo" />
         </div>
         <div id="Social">
-          <a href="https://www.facebook.com/people/Ethan-Carson/pfbid0kH1xukHcJBvptKQFgZznEoMND3JAaPXF1U9eSNUKypQ7xhBarVFoTZz7Wv9HJE89l/">
+          <a
+            rel="noopener"
+            href="https://www.facebook.com/people/Ethan-Carson/pfbid0kH1xukHcJBvptKQFgZznEoMND3JAaPXF1U9eSNUKypQ7xhBarVFoTZz7Wv9HJE89l/"
+            target="_blank"
+          >
             <Image src="/facebook.svg" alt="Facebook" width={25} height={25} />
           </a>
-          <a href="https://www.linkedin.com/in/ethan-carson-98978332a/">
+          <a
+            rel="noopener"
+            href="https://www.linkedin.com/in/ethan-carson-98978332a/"
+            target="_blank"
+          >
             <Image src="/linkedin.svg" alt="LinkedIn" width={25} height={25} />
           </a>
           <Image src="/youtube.svg" alt="Youtube" width={25} height={25} />

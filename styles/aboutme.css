@@ -46,6 +46,15 @@
   margin: 0;
   padding: 0;
 }
+#AboutMe aside img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.6rem;
+}
+#AboutMe aside p {
+  text-align: center;
+  padding: 0.2rem;
+}
 #AboutMe aside div {
   display: flex;
   flex-direction: column;

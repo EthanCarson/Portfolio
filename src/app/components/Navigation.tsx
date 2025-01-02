@@ -93,8 +93,6 @@ export default function Navbar() {
           </ul>
         </li>
       </ul>
-
-     
     </nav>
   );
 }
