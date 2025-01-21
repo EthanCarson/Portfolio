@@ -1,7 +1,7 @@
 import Card from "./components/Card";
 import Header from "./components/Header";
 import "../../styles/home.css";
-import Image from "next/image";
+import * as motion from "motion/react-client";
 
 export default function Home() {
   return (
@@ -11,16 +11,13 @@ export default function Home() {
         Heading="Custom Cloud Tileset! (Based On Super Mario World's Map)"
       />
       <section id="Intro">
+        <motion.article initial={{ scale: 0 }} animate={{ scale: 1 }}>
+          <img src="/img/Me.png" alt="Ethan Carson" width="360" height={300} />
+        </motion.article>
         <article>
-          <Image
-            src="/img/Me.png"
-            alt="Ethan Carson"
-            width="360"
-            height={300}
-          />
-        </article>
-        <article>
-          <h1>Hello There!</h1>
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            Hello There!
+          </motion.h1>
           <p>
             My name is Ethan Carson! I was born in Savona NY in the year 2006. I
             graduated from Campbell-Savona Jr/Sr High School, and am now

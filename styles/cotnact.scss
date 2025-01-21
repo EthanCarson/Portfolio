@@ -31,13 +31,6 @@
         border-radius: $SpaceMD;
         padding: $SpaceLG;
         text-align: center;
-        a {
-            color: $PDBLue;
-
-            :hover {
-                color: $PDBlueS;
-            }
-        }
     }
     section {
         flex: 2 1 60%; // Ensure it's flexible but takes up 60% of the space

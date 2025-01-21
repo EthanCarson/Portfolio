@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import * as motion from "motion/react-client";
 /* 
 
 This component is an extension of the About Me page. It renders 5 pre-determined Images. When an image is selected, other images disappear. A caption and a button are added as well. The button resets the component.
@@ -59,7 +59,9 @@ export default function Accomplish() {
       <section>
         {accomplishments.map((item) => (
           <React.Fragment key={item.id}>
-            <img
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
               src={item.src}
               width={231}
               height={231}
@@ -83,13 +85,15 @@ export default function Accomplish() {
         ))}
 
         {/* Button to reset the visible state to default */}
-        <button
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
           type="button"
           style={{ display: visibleKey !== null ? "block" : "none" }}
           onClick={() => handleImageClick(null)}
         >
           See More:
-        </button>
+        </motion.button>
       </section>
     </aside>
   );

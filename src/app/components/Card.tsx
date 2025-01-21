@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Fetcher from "./Fetcher";
 import { Project, Highlight } from "./DataTypes"; // Import types
+import * as motion from "motion/react-client";
 
 /*
 This Component Creates a Card with an Image and Caption
@@ -51,19 +52,23 @@ export default function Card({ children, isHomePage }: CardProps) {
               height={251}
               layout="intrinsic"
             />
-            <div>
-              {caption && isHomePage && <em>Project: </em>}
-              {caption}
-            </div>
+            <div>{caption}</div>
           </>
         );
 
         return (
           <div className="Card">
             {link !== "#" ? (
-              <Link href={link}>{renderCardContent}</Link>
+              <Link href={link}>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {renderCardContent}
+                </motion.div>
+              </Link>
             ) : (
-              renderCardContent
+              <div>{renderCardContent}</div> // Regular div when no Link
             )}
           </div>
         );

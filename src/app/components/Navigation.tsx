@@ -41,16 +41,12 @@ export default function Navbar() {
         </li>
 
         <li id="ProjectNav" className={`mobile ${isMenuOpen ? "open" : ""}`}>
-          Projects:
+          {pathname === "/projects" ? (
+            "Projects:"
+          ) : (
+            <Link href="/projects">Projects:</Link>
+          )}
           <ul>
-            <li>
-              {pathname === "/projects" ? (
-                "Showcase"
-              ) : (
-                <Link href="/projects">Showcase</Link>
-              )}
-            </li>
-
             <li className={`mobile ${isMenuOpen ? "open" : ""}`}>
               {pathname === "/projects" ? (
                 "Websites"
@@ -78,7 +74,7 @@ export default function Navbar() {
 
         <li id="ProjectNav" className={`mobile ${isMenuOpen ? "open" : ""}`}>
           {pathname === "/contact" ? (
-            "Contact"
+            "Contact:"
           ) : (
             <Link href="/contact">Contact</Link>
           )}
